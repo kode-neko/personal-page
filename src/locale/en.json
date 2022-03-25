@@ -1,0 +1,61 @@
+{
+  "welcome": {
+    "title": "Welcome!",
+    "text": "I'm a fullstack developer. Check out my profile and projects. I like cooking, drawing and being alchemist."
+  },
+  "tech": {
+    "title": "Tecnologías",
+    "desc": "Check out each technology for see a brief description",
+    "redux": "Check out each technology for see a brief description",
+    "angular": "Check out each technology for see a brief description",
+    "node": "Check out each technology for see a brief description",
+    "mongo": "Check out each technology for see a brief description",
+    "typescript": "Check out each technology for see a brief description",
+    "graphql": "Check out each technology for see a brief description",
+    "vue": "Check out each technology for see a brief description",
+    "pineaple": "Check out each technology for see a brief description",
+    "php": "Check out each technology for see a brief description",
+    "docker": "Check out each technology for see a brief description",
+    "github": "Check out each technology for see a brief description",
+    "webpack": "Check out each technology for see a brief description",
+    "parcel": "Check out each technology for see a brief description",
+    "npm/yarn": "Check out each technology for see a brief description"
+  },
+  "exp": {
+    "title": "Experience",
+    "text": "I have been a developer for 7 years. I usually made webs in the HTML4 era when I was younger. I wanted to be an illustrator but it wasn't made for me. Decidí estudiar ingeniería informñatica y al termianr comence haciendo aplicaciones móbiles con Android. Al poco comence con el desarrollo web y me especialicé en el desarrollo front. Mainly I worked in consulting companies developing for medium-large size companies such as Odigeo, inditex and EUIPO/WIPO."
+  },
+  "projects": {
+    "lionmiss": {
+      "title": "Lion Miss",
+      "desc": ""
+    },
+    "kodenotes": {
+      "title": "KodeNotes",
+      "desc": ""
+    },
+    "personalPage": {
+      "title": "Mi web personal",
+      "desc": ""
+    },
+    "personalBlog": {
+      "title": "Mi blog personal",
+      "desc": ""
+    },
+    "codepen": {
+      "title": "Codepen",
+      "desc": ""
+    },
+    "stackblitz": {
+      "title": "Stackblitz",
+      "desc": ""
+    }
+  },
+  "contact": {
+    "name": "name",
+    "email": "example@email.com",
+    "msg": "What do ypu want? :)",
+    "ok": "The message was sended! You'll recieved soon a confirmation in your inbox",
+    "ko": "Oh no! There was a problem. Try again later :("
+  }
+}

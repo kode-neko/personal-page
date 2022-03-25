@@ -1,0 +1,62 @@
+{
+  "welcome": {
+    "title": "¡Bienvenido!",
+    "text": "Soy full-stack web developer. Hecha un vistazo a mi perfil y ejemplos. También suelo cocinar, hacer dibujos y jugar a ser alquimista."
+  },
+  "tech": {
+    "title": "Tecnologías",
+    "desc": "Pasa por encima de cada tecnología para ver su descripción",
+    "react": "Pasa por encima de cada tecnología para ver su descripción",
+    "redux": "Pasa por encima de cada tecnología para ver su descripción",
+    "angular": "Pasa por encima de cada tecnología para ver su descripción",
+    "node": "Pasa por encima de cada tecnología para ver su descripción",
+    "mongo": "Pasa por encima de cada tecnología para ver su descripción",
+    "typescript": "Pasa por encima de cada tecnología para ver su descripción",
+    "graphql": "Pasa por encima de cada tecnología para ver su descripción",
+    "vue": "Pasa por encima de cada tecnología para ver su descripción",
+    "pineaple": "Pasa por encima de cada tecnología para ver su descripción",
+    "php": "Pasa por encima de cada tecnología para ver su descripción",
+    "docker": "Pasa por encima de cada tecnología para ver su descripción",
+    "github": "Pasa por encima de cada tecnología para ver su descripción",
+    "webpack": "Pasa por encima de cada tecnología para ver su descripción",
+    "parcel": "Pasa por encima de cada tecnología para ver su descripción",
+    "npm/yarn": "Pasa por encima de cada tecnología para ver su descripción"
+  },
+  "exp": {
+    "title": "Experiencia",
+    "text": "Llevo casi 7 años dedicandome al desarrollo. Desde que era joven me gustaba hacer webs en la época del HTML4. Cuando crecí quise ser artista y vi que no era mi camino. Decidí estudiar ingeniería informñatica y al termianr comence haciendo aplicaciones móbiles con Android. Al poco comence con el desarrollo web y me especialicé en el desarrollo front. Trabajé principalmente en consultorias en proyectos para medianas y grandes compañías como Odigeo, Inditex o la WIPO/EUIPO."
+  },
+  "projects": {
+    "lionmiss": {
+      "title": "Lion Miss",
+      "desc": ""
+    },
+    "kodenotes": {
+      "title": "KodeNotes",
+      "desc": ""
+    },
+    "personalPage": {
+      "title": "Mi web personal",
+      "desc": ""
+    },
+    "personalBlog": {
+      "title": "Mi blog personal",
+      "desc": ""
+    },
+    "codepen": {
+      "title": "Codepen",
+      "desc": ""
+    },
+    "stackblitz": {
+      "title": "Stackblitz",
+      "desc": ""
+    }
+  },
+  "contact": {
+    "name": "nombre",
+    "email": "ejemplo@email.com",
+    "msg": "Escribe aquí el mesnaje...",
+    "ok": "¡Mensaje enviado! Recivirás pronto en tu correo la confirmación :)",
+    "ko": "¡Vaya! Parece que hubo un problema. Inténtelo más tarde :("
+  }
+}
