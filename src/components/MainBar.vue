@@ -35,8 +35,8 @@ export default {
   height: 100vh;
   padding: 40px 20px;
   box-sizing: border-box;
-  position: sticky;
-  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  box-shadow: 6px 0px 4px rgba(0, 0, 0, 0.3), -6px 0px 4px rgba(0, 0, 0, 0.4);
 }
 
 .logo {

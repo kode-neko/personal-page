@@ -5,7 +5,7 @@
 
 body {
   min-height: 100vh;
-  background: url("https://www.transparenttextures.com/patterns/asfalt-light.png"),
+  background: url("https://www.transparenttextures.com/patterns/asfalt-light.png") fixed,
     var(--black);
   color: var(--white);
   font-family: "Roboto", sans-serif;

@@ -15,6 +15,7 @@ export default {
 .content {
   font-family: "Saira Condensed", sans-serif;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  padding: 10px;
 }
 .title {
   font-size: 48px;
