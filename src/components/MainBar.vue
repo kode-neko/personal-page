@@ -31,12 +31,12 @@ export default {
 
 <style module>
 .cont {
-  background: url("https://www.transparenttextures.com/patterns/asfalt-dark.png"),
-    linear-gradient(180deg, #9164a0 0%, #2e1152 100%);
+  background: linear-gradient(180deg, #9164a0 0%, #2e1152 100%);
   height: 100vh;
   padding: 40px 20px;
   box-sizing: border-box;
-  position: relative;
+  position: sticky;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
