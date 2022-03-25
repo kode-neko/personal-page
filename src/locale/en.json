@@ -1,25 +1,111 @@
 {
   "welcome": {
     "title": "Welcome!",
-    "text": "I'm a fullstack developer. Check out my profile and projects. I like cooking, drawing and being alchemist."
+    "text": "I'm a fullstack developer. Check out my profile and projects. I like cooking, drawing and being alchemist 💻🍔🎨⚗️"
   },
   "tech": {
     "title": "Tecnologías",
-    "desc": "Check out each technology for see a brief description",
-    "redux": "Check out each technology for see a brief description",
-    "angular": "Check out each technology for see a brief description",
-    "node": "Check out each technology for see a brief description",
-    "mongo": "Check out each technology for see a brief description",
-    "typescript": "Check out each technology for see a brief description",
-    "graphql": "Check out each technology for see a brief description",
-    "vue": "Check out each technology for see a brief description",
-    "pineaple": "Check out each technology for see a brief description",
-    "php": "Check out each technology for see a brief description",
-    "docker": "Check out each technology for see a brief description",
-    "github": "Check out each technology for see a brief description",
-    "webpack": "Check out each technology for see a brief description",
-    "parcel": "Check out each technology for see a brief description",
-    "npm/yarn": "Check out each technology for see a brief description"
+    "msg": "Pasa por encima de cada tecnología para ver su descripción.",
+    "react": {
+      "name": "React",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "redux": {
+      "name": "Redux",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "angular": {
+      "name": "Angular",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "node": {
+      "name": "Node",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "express": {
+      "name": "Express",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "mongo": {
+      "name": "Mongo",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "typescript": {
+      "name": "Typescript",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "graphql": {
+      "name": "GraphQL",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "vue": {
+      "name": "Vue",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "pineaple": {
+      "name": "Pineaple",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "docker": {
+      "name": "Docker",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "github": {
+      "name": "Github",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "webpack": {
+      "name": "Webpack",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "roller": {
+      "name": "Roller",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "npmYarn": {
+      "name": "npm-yarn",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "php": {
+      "name": "PHP",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "mariadb": {
+      "name": "MariaDB",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "laravel": {
+      "name": "Laravel",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "wordpress": {
+      "name": "Wordpress",
+      "version": "",
+      "desc": "Esto es una descripción"
+    },
+    "visualCode": {
+      "name": "Visual Code",
+      "version": "",
+      "desc": "Esto es una descripción"
+    }
   },
   "exp": {
     "title": "Experience",

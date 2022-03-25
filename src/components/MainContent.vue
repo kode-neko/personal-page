@@ -2,7 +2,7 @@
   <div :class="$style.cont">
     <div :class="$style.header"><WelcomeMsg /></div>
     <div :class="$style.sections">
-      <BoxContent title="Tecnologías"></BoxContent>
+      <BoxContent title="Tecnologías"><TechSection /></BoxContent>
     </div>
     <div :class="$style.sections">
       <BoxContent title="Experiencia"><ExperienceSection /></BoxContent>
@@ -19,6 +19,7 @@
 <script>
 import WelcomeMsg from "./WelcomeMsg.vue";
 import BoxContent from "./BoxContent.vue";
+import TechSection from "./sections/TechSection.vue";
 import ExperienceSection from "./sections/ExperienceSection.vue";
 
 export default {
@@ -26,6 +27,7 @@ export default {
   components: {
     WelcomeMsg,
     BoxContent,
+    TechSection,
     ExperienceSection,
   },
 };

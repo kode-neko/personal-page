@@ -1,7 +1,7 @@
 <template>
   <section :class="$style.box">
     <h2 :class="$style.title">{{ title }}</h2>
-    <div :class="$style.cont"><slot /></div>
+    <slot />
   </section>
 </template>
 
@@ -18,7 +18,7 @@ export default {
 .box {
   border-radius: 8px;
   padding: 20px;
-  background-color: var(--black-second);
+  background-color: var(--black-box);
   margin: 40px 0;
 }
 .box p {
@@ -31,6 +31,7 @@ export default {
   font-size: 28px;
   font-family: "Saira Condensed", sans-serif;
   margin-bottom: 20px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 }
 .cont {
 }
