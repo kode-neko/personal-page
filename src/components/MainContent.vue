@@ -11,7 +11,7 @@
       <BoxContent title="Proyectos"></BoxContent>
     </div>
     <div :class="$style.sections">
-      <BoxContent title="Contacto"></BoxContent>
+      <BoxContent title="Contacto"><ContactSection /></BoxContent>
     </div>
   </div>
 </template>
@@ -21,6 +21,7 @@ import WelcomeMsg from "./WelcomeMsg.vue";
 import BoxContent from "./BoxContent.vue";
 import TechSection from "./sections/TechSection.vue";
 import ExperienceSection from "./sections/ExperienceSection.vue";
+import ContactSection from "./sections/ContactSection.vue";
 
 export default {
   name: "MainContent",
@@ -29,6 +30,7 @@ export default {
     BoxContent,
     TechSection,
     ExperienceSection,
+    ContactSection,
   },
 };
 </script>

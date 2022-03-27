@@ -18,6 +18,7 @@ export default {
 .box {
   border-radius: 8px;
   padding: 20px;
+  padding-bottom: 40px;
   background-color: var(--black-box);
   margin: 40px 0;
 }

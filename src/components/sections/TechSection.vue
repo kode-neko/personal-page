@@ -37,7 +37,6 @@ export default {
       return colorIndex;
     },
     getDescription(tech) {
-      console.log(tech);
       this.description = tech ? `tech.${tech}.desc` : "tech.msg";
     },
   },

@@ -139,8 +139,9 @@
   },
   "contact": {
     "name": "nombre",
-    "email": "ejemplo@email.com",
+    "mail": "ejemplo@email.com",
     "msg": "Escribe aquí el mesnaje...",
+    "send": "Enviar",
     "ok": "¡Mensaje enviado! Recivirás pronto en tu correo la confirmación :)",
     "ko": "¡Vaya! Parece que hubo un problema. Inténtelo más tarde :("
   }
