@@ -5,7 +5,7 @@
 <script>
 import { tagColor } from "../../globals";
 export default {
-  name: "TagTech",
+  name: "InfoTag",
   data() {
     return { tagColor };
   },

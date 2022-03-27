@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import ActionBtn from "../ActionBtn.vue";
+import ActionBtn from "../common/ActionBtn.vue";
 import useVuelidate from "@vuelidate/core";
 import {
   required,

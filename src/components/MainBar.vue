@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import SocialIcon from "./SocialIcon.vue";
-import MainBtn from "./MainBtn.vue";
+import SocialIcon from "./common/SocialIcon.vue";
+import MainBtn from "./common/MainBtn.vue";
 export default {
   name: "MainBar",
   components: { SocialIcon, MainBtn },

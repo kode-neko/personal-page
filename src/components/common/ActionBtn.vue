@@ -1,6 +1,6 @@
 <template>
   <button :class="$style.btn" :type="action" :disabled="disabled">
-    <img v-if="spinner" :class="$style.spinner" src="../assets/spinner.png" />{{
+    <img v-if="spinner" :class="$style.spinner" src="../../assets/spinner.png" />{{
       spinner ? "" : $t(label)
     }}
   </button>

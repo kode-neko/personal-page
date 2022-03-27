@@ -17,7 +17,7 @@
 
 <script>
 import { techList, tagColor } from "../../globals";
-import TagTech from "./TagTech.vue";
+import TagTech from "../common/InfoTag.vue";
 export default {
   name: "TechSection",
   components: { TagTech },
