@@ -142,7 +142,12 @@
     "mail": "example@email.com",
     "msg": "What do ypu want? :)",
     "send": "Send",
-    "ok": "The message was sended! You'll recieved soon a confirmation in your inbox",
-    "ko": "Oh no! There was a problem. Try again later :("
+    "ok": "¡Mensaje enviado! Recivirás pronto en tu correo la confirmación :)",
+    "ko": "¡Vaya! Parece que hubo un problema. Inténtelo más tarde :(",
+    "required": "El campo está vacio",
+    "requiredMsg": "El cuerpo del mensaje está vacio",
+    "formatMail": "Un email tiene el formato xxx@xxx.xxx",
+    "minMsg": "El mensaje a de tener más de 50 chars",
+    "maxMsg": "El mensaje no puede exceder los 600 chars"
   }
 }

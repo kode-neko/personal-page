@@ -6,8 +6,15 @@
         name="name"
         type="text"
         :placeholder="$t('contact.name')"
+        @blur="v$.msg.name.$touch"
       />
-      <div :class="$style.hint">es un ejemplo de un hint</div>
+      <div :class="$style.hint">
+        {{
+          v$.msg.name.$dirty && v$.msg.name.$error
+            ? $t(v$.msg.name.$errors[0].$message)
+            : ""
+        }}
+      </div>
     </div>
     <div :class="$style.field">
       <input
@@ -15,21 +22,40 @@
         name="mail"
         type="text"
         placeholder="example@gmail.com"
+        @blur="v$.msg.mail.$touch"
       />
-      <div :class="$style.hint">es un ejemplo de un hint</div>
+      <div :class="$style.hint">
+        {{
+          v$.msg.mail.$dirty && v$.msg.mail.$error
+            ? $t(v$.msg.mail.$errors[0].$message)
+            : ""
+        }}
+      </div>
     </div>
     <div :class="$style.field">
       <textarea
         v-model="msg.content"
         name="content"
         :placeholder="$t('contact.msg')"
+        @blur="v$.msg.content.$touch"
       ></textarea>
-      <div :class="$style.hint">500/500 caracteres</div>
+      <div :class="$style.hint">
+        {{
+          v$.msg.content.$dirty && v$.msg.content.$error
+            ? $t(v$.msg.content.$errors[0].$message)
+            : ""
+        }}
+      </div>
     </div>
     <div :class="$style.footer">
       <div :class="$style.info">Complete los campos para enviar el mensaje</div>
       <div :class="$style.actions">
-        <ActionBtn label="contact.send" action="submit" />
+        <ActionBtn
+          label="contact.send"
+          action="submit"
+          :spinner="sending"
+          :disabled="v$.$invalid"
+        />
       </div>
     </div>
   </form>
@@ -37,6 +63,14 @@
 
 <script>
 import ActionBtn from "../ActionBtn.vue";
+import useVuelidate from "@vuelidate/core";
+import {
+  required,
+  email,
+  minLength,
+  maxLength,
+  helpers,
+} from "@vuelidate/validators";
 export default {
   name: "ContactSection",
   components: { ActionBtn },
@@ -47,12 +81,39 @@ export default {
         mail: "",
         content: "",
       },
+      sending: false,
+    };
+  },
+  setup() {
+    return {
+      v$: useVuelidate(),
     };
   },
   methods: {
     sendMsg() {
-      console.log("form", this.msg);
+      this.sending = true;
+      setTimeout(() => {
+        this.sending = false;
+      }, 5000);
     },
+  },
+  validations() {
+    return {
+      msg: {
+        name: {
+          required: helpers.withMessage("contact.required", required),
+        },
+        mail: {
+          email: helpers.withMessage("contact.formatMail", email),
+          required: helpers.withMessage("contact.required", required),
+        },
+        content: {
+          minLengthValue: helpers.withMessage("contact.minMsg", minLength(50)),
+          maxLengthValue: helpers.withMessage("contact.maxMsg", maxLength(600)),
+          required: helpers.withMessage("contact.requiredMsg", required),
+        },
+      },
+    };
   },
 };
 </script>
@@ -73,7 +134,7 @@ form {
   color: var(--white);
   padding: 8px 0;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   font-family: "Roboto", sans-serif;
 }
 .field input::placeholder,
@@ -84,6 +145,7 @@ form {
 .field textarea:focus-visible {
   outline: none;
   border-bottom: 4px solid var(--purple-light);
+  margin-bottom: 10px;
 }
 .field input {
   height: 22px;
@@ -94,6 +156,7 @@ form {
 .hint {
   font-style: italic;
   color: var(--purple-dark);
+  height: 16px;
 }
 .footer {
   margin-top: 40px;

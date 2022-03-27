@@ -1,5 +1,9 @@
 <template>
-  <button :class="$style.btn" :type="action">{{ $t(label) }}</button>
+  <button :class="$style.btn" :type="action" :disabled="disabled">
+    <img v-if="spinner" :class="$style.spinner" src="../assets/spinner.png" />{{
+      spinner ? "" : $t(label)
+    }}
+  </button>
 </template>
 
 <script>
@@ -7,6 +11,8 @@ export default {
   name: "ActionBtn",
   props: {
     label: String,
+    spinner: Boolean,
+    disabled: Boolean,
     action: {
       type: String,
       default: "button",
@@ -34,5 +40,16 @@ export default {
 .btn:hover {
   background-color: var(--purple-mid);
   cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: var(--purple-dark);
+  cursor: auto;
+  color: var(--purple-light);
+}
+
+.spinner {
+  height: 24px;
+  vertical-align: middle;
 }
 </style>

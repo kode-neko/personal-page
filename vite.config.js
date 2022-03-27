@@ -10,6 +10,7 @@ export default defineConfig({
       ignored: ["!**/node_modules/your-package-name/**"],
     },
   },
+  mode: "development",
   plugins: [vue()],
   resolve: {
     alias: {
