@@ -114,7 +114,7 @@
   "projects": {
     "lionmiss": {
       "title": "Lion Miss",
-      "desc": ""
+      "desc": "Tienda online de ejemplo con múltiples funciones: carrito, galeria, comentarios, envio, usuarios..."
     },
     "kodenotes": {
       "title": "KodeNotes",

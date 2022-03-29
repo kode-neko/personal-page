@@ -5,7 +5,7 @@
         v-for="(tech, index) in techList"
         v-bind:key="tech"
         :label="$t(`tech.${tech}.name`)"
-        :color="tagColor[colorIndex(index)]"
+        :color="tagColor[getColor(index)]"
         @mouseover="getDescription(tech)"
       />
     </div>
@@ -17,6 +17,7 @@
 
 <script>
 import { techList, tagColor } from "../../globals";
+import { getColor } from "../../utils";
 import TagTech from "../common/InfoTag.vue";
 export default {
   name: "TechSection",
@@ -29,13 +30,7 @@ export default {
     };
   },
   methods: {
-    colorIndex(index) {
-      let colorIndex = index;
-      while (colorIndex > this.tagColor.length - 1) {
-        colorIndex = colorIndex - this.tagColor.length;
-      }
-      return colorIndex;
-    },
+    getColor,
     getDescription(tech) {
       this.description = tech ? `tech.${tech}.desc` : "tech.msg";
     },

@@ -20,4 +20,22 @@ const techList = [
   "github",
 ];
 const tagColor = ["green", "purple", "orange", "darkPurple", "bluePurple"];
-export { techList, tagColor };
+const projectLionMiss = {
+  id: "lionmiss",
+  linkList: [
+    { id: "github", icon: ["fab", "github"], link: "", alt: "" },
+    { id: "link", icon: ["fa", "link"], link: "", alt: "" },
+  ],
+  pic: "lionmiss.png",
+  tagList: ["react", "redux", "node", "mongo"],
+};
+const projectCheety = {
+  id: "cheety",
+  github: "",
+  link: "",
+  pic: "lionmiss.png",
+  tagList: ["vue", "pineaple", "node", "mongo"],
+};
+const projecList = [projectLionMiss];
+
+export { techList, tagColor, projecList };

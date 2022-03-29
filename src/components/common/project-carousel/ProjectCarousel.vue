@@ -1,9 +1,13 @@
 <template>
-  <div :class="$style.carousel">
-    <InfoCarousel />
+  <div v-for="ele in list" :key="ele.id" :class="$style.carousel">
+    <InfoCarousel
+      :id="ele.id"
+      :linkList="ele.linkList"
+      :tagList="ele.tagList"
+    />
     <div :class="$style.backinfo" />
     <div :class="$style.backTransparent" />
-    <img :class="$style.pic" src="../../../assets/lionmiss.png" />
+    <img :class="$style.pic" :src="getImageURL(ele.pic)" />
     <font-awesome-icon
       :class="[$style.left, $style.arrow]"
       :icon="['fa', 'circle-chevron-left']"
@@ -17,13 +21,25 @@
 
 <script>
 import InfoCarousel from "./InfoCarousel.vue";
+
 export default {
   name: "ProjectCarousel",
   components: { InfoCarousel },
+  props: {
+    list: Array,
+  },
+  methods: {
+    getImageURL(file) {
+      return new URL(`../../../assets/${file}`, import.meta.url).href;
+    },
+  },
 };
 </script>
 
 <style module>
+/*
+:src="`assets/${ele.pic}`"
+*/
 .carousel {
   height: 300px;
   overflow: hidden;

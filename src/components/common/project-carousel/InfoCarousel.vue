@@ -1,31 +1,46 @@
 <template>
   <div :class="$style.info">
     <div :class="$style.title">
-      <h3>Lion Miss</h3>
+      <h3>{{ $t(`projects.${id}.title`) }}</h3>
       <div :class="$style.links">
-        <SocialIcon :icon="['fab', 'github']" />
-        <SocialIcon :icon="['fa', 'link']" />
+        <SocialIcon v-for="link in linkList" :key="link.id" :icon="link.icon" />
       </div>
     </div>
     <p>
-      Tienda online de ejemplo con múltiples funciones: carrito, galeria,
-      comentarios, envio, usuarios...
+      {{ $t(`projects.${id}.desc`) }}
     </p>
     <div :class="$style.tags">
-      <InfoTag :label="$t(`tech.redux.name`)" color="darkPurple" />
-      <InfoTag :label="$t(`tech.react.name`)" color="darkPurple" />
+      <InfoTag
+        v-for="tag in tagList"
+        :key="tag"
+        :label="$t(`tech.${tag}.name`)"
+        :color="darkPurple"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import { tagColor } from "../../../globals";
+import { getColor } from "../../../utils";
 import InfoTag from "../InfoTag.vue";
 import SocialIcon from "../SocialIcon.vue";
 export default {
   name: "InfoCarousel",
+  data() {
+    return { tagColor };
+  },
+  props: {
+    id: String,
+    linksList: Array,
+    tagList: Array,
+  },
   components: {
     InfoTag,
     SocialIcon,
+  },
+  methods: {
+    getColor,
   },
 };
 </script>
