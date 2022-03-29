@@ -3,7 +3,12 @@
     <div :class="$style.title">
       <h3>{{ $t(`projects.${id}.title`) }}</h3>
       <div :class="$style.links">
-        <SocialIcon v-for="link in linkList" :key="link.id" :icon="link.icon" />
+        <SocialIcon
+          v-for="link in linkList"
+          :key="link.id"
+          :icon="link.icon"
+          :color="`${color}Dark`"
+        />
       </div>
     </div>
     <p>
@@ -14,26 +19,23 @@
         v-for="tag in tagList"
         :key="tag"
         :label="$t(`tech.${tag}.name`)"
-        :color="darkPurple"
+        :color="`${color}Dark`"
       />
     </div>
   </div>
 </template>
 
 <script>
-import { tagColor } from "../../../globals";
 import { getColor } from "../../../utils";
 import InfoTag from "../InfoTag.vue";
 import SocialIcon from "../SocialIcon.vue";
 export default {
   name: "InfoCarousel",
-  data() {
-    return { tagColor };
-  },
   props: {
     id: String,
-    linksList: Array,
+    linkList: Array,
     tagList: Array,
+    color: String,
   },
   components: {
     InfoTag,
@@ -46,6 +48,8 @@ export default {
 </script>
 
 <style module>
+@import "@/assets/backs.css";
+
 .info {
   padding-right: 64px;
   position: absolute;
@@ -63,10 +67,16 @@ export default {
   display: inline-block;
   font-size: 52px;
   font-family: "Saira Condensed", sans-serif;
+  margin-right: 20px;
 }
 .info .title .links {
   display: inline-block;
   gap: 10px;
+  position: relative;
+  top: -6px;
+}
+.info .title .links >* {
+  margin-right: 10px;
 }
 .info p {
   font-size: 16px;

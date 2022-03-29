@@ -18,9 +18,15 @@
   --tag-vio-blue-dark: #381763;
   --tag-orange-dark: #643802;
 
+  --purple-mid-dark-02: #4d0641;
+  --tag-green-dark-02: #052c3d;
+  --tag-purple-dark-dark-02: #380230;
+  --tag-vio-blue-dark-02: #26094b;
+  --tag-orange-dark-02: #3b2100;
+
   --purple-mid-trans: #a3268e81;
   --tag-green-trans: #1462847e;
   --tag-purple-dark-trans: #6b0c5d79;
-  --tag-vio-blue: #783dc57c;
+  --tag-vio-blue-trans: #783dc57c;
   --tag-orange-trans: #bc670075;
 }

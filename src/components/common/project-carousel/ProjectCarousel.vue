@@ -2,6 +2,7 @@
   <div :class="$style.carousel">
     <div
       v-for="(ele, index) in list"
+      v-show="index === slideActive"
       :class="[$style.slide, index === slideActive ? $style.active : '']"
       :key="ele.id"
     >
@@ -9,9 +10,10 @@
         :id="ele.id"
         :linkList="ele.linkList"
         :tagList="ele.tagList"
+        :color="ele.color"
       />
-      <div :class="$style.backinfo" />
-      <div :class="$style.backTransparent" />
+      <div :class="[$style.backinfo, ele.color]" />
+      <div :class="[$style.backTransparent, `${ele.color}Trans`]" />
       <img :class="$style.pic" :src="getImageURL(ele.pic)" />
     </div>
     <font-awesome-icon
@@ -64,6 +66,8 @@ export default {
 </script>
 
 <style module>
+@import "@/assets/backs.css";
+
 .carousel {
   height: 300px;
   position: relative;
@@ -81,23 +85,25 @@ export default {
 .backinfo {
   position: absolute;
   top: 0px;
-  right: 0;
-  width: 50%;
   height: 100%;
-}
-
-.backinfo {
   transform: skew(-10deg);
-  background-image: linear-gradient(
+  /*background-image: linear-gradient(
     90deg,
     var(--purple-mid) 0%,
     var(--purple-mid-dark) 100%
-  );
+  );*/
   box-shadow: -4px 0 15px rgba(0, 0, 0, 0.5);
   z-index: 1;
-  width: 60%;
+  width: 62%;
   right: -50px;
 }
+
+@media (max-width: 1200px) {
+  .backinfo {
+    width: 70%;
+  }
+}
+
 .backTransparent {
   position: absolute;
   height: 100%;
@@ -105,7 +111,6 @@ export default {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: var(--purple-mid-trans);
 }
 
 .pic {
@@ -115,6 +120,7 @@ export default {
   left: 0;
   z-index: 0;
 }
+
 .arrow {
   cursor: pointer;
   height: 32px;
@@ -124,19 +130,16 @@ export default {
 
   transition: all 0.5s;
 }
+
 .arrow:hover {
   transform: scale(1.2);
 }
+
 .arrow.left {
   left: 10px;
 }
+
 .arrow.right {
   right: 10px;
-}
-.tags {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: flex-start;
 }
 </style>

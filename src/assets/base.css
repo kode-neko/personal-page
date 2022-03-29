@@ -11,19 +11,3 @@ body {
   color: var(--white);
   font-family: "Roboto", sans-serif;
 }
-
-.green {
-  background-color: var(--tag-green);
-}
-.purple {
-  background-color: var(--purple-mid);
-}
-.darkPurple {
-  background-color: var(--tag-purple-dark);
-}
-.bluePurple {
-  background-color: var(--tag-vio-blue);
-}
-.orange {
-  background-color: var(--tag-orange);
-}

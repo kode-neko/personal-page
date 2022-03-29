@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style module>
+@import "@/assets/backs.css";
+
 .tag {
   display: inline-block;
   font-family: "Saira Condensed", sans-serif;
@@ -32,22 +34,5 @@ export default {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.tag:hover {
-  cursor: pointer;
-}
-.green {
-  background-color: var(--tag-green);
-}
-.purple {
-  background-color: var(--purple-mid);
-}
-.darkPurple {
-  background-color: var(--tag-purple-dark);
-}
-.bluePurple {
-  background-color: var(--tag-vio-blue);
-}
-.orange {
-  background-color: var(--tag-orange);
-}
+
 </style>

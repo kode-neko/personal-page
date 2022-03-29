@@ -28,6 +28,7 @@ const projectLionMiss = {
   ],
   pic: "lionmiss.png",
   tagList: ["react", "redux", "node", "mongo"],
+  color: "purple",
 };
 const projectCheety = {
   id: "cheety",
@@ -35,6 +36,7 @@ const projectCheety = {
   link: "",
   pic: "lionmiss.png",
   tagList: ["vue", "pineaple", "node", "mongo"],
+  color: "green",
 };
 const projecList = [projectLionMiss, projectCheety];
 

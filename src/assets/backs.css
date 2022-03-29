@@ -1,0 +1,69 @@
+@import "colors.css";
+
+/* Regular */
+.green {
+  background-color: var(--tag-green);
+}
+.purple {
+  background-color: var(--purple-mid);
+}
+.darkPurple {
+  background-color: var(--tag-purple-dark);
+}
+.bluePurple {
+  background-color: var(--tag-vio-blue);
+}
+.orange {
+  background-color: var(--tag-orange);
+}
+
+/* Dark */
+.greenDark {
+  background-color: var(--tag-green-dark);
+}
+.purpleDark {
+  background-color: var(--purple-mid-dark);
+}
+.purpleDarkDark {
+  background-color: var(--tag-purple-dark-dark);
+}
+.vioBlueDark {
+  background-color: var(--tag-vio-blue-dark);
+}
+.orangeDark {
+  background-color: var(--tag-orange-dark);
+}
+
+/* Dark x2 */
+.greenDark02 {
+  background-color: var(--tag-green-dark-02);
+}
+.purpleDark02 {
+  background-color: var(--purple-mid-dark-02);
+}
+.purpleDarkDark02 {
+  background-color: var(--tag-purple-dark-dark-02);
+}
+.vioBlueDark02 {
+  background-color: var(--tag-vio-blue-dark-02);
+}
+.orangeDark02 {
+  background-color: var(--tag-orange-dark-02);
+}
+
+/* Trans */
+.greenTrans {
+  background-color: var(--tag-green-trans);
+}
+.purpleTrans {
+  background-color: var(--purple-mid-trans);
+}
+.purpleDarkTrans {
+  background-color: var(--tag-purple-dark-trans);
+}
+.vioBlueTrans {
+  background-color: var(--tag-vio-blue-trans);
+}
+.orangeTrans {
+  background-color: var(--tag-orange-trans);
+}

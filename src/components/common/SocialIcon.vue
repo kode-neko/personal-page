@@ -28,6 +28,8 @@ export default {
 </script>
 
 <style module>
+@import "@/assets/backs.css";
+
 .cont {
   display: inline-block;
 }
@@ -51,24 +53,5 @@ export default {
   bottom: 1px;
   right: 1px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-.dark {
-  background: var(--black);
-}
-.green {
-  background: var(--tag-green);
-}
-.purple {
-  background: var(--purple-mid);
-}
-.darkPurple {
-  background: var(--tag-purple-dark);
-}
-.bluePurple {
-  background: var(--tag-vio-blue);
-}
-.orange {
-  background: var(--tag-orange);
 }
 </style>
