@@ -17,10 +17,12 @@
     <font-awesome-icon
       :class="[$style.left, $style.arrow]"
       :icon="['fa', 'circle-chevron-left']"
+      @click="prev()"
     />
     <font-awesome-icon
       :class="[$style.right, $style.arrow]"
       :icon="['fa', 'circle-chevron-right']"
+      @click="next()"
     />
   </div>
 </template>
@@ -42,6 +44,20 @@ export default {
   methods: {
     getImageURL(file) {
       return new URL(`../../../assets/${file}`, import.meta.url).href;
+    },
+    next() {
+      if (this.slideActive + 1 === this.list.length) {
+        this.slideActive = 0;
+      } else {
+        this.slideActive++;
+      }
+    },
+    prev() {
+      if (this.slideActive - 1 < 0) {
+        this.slideActive = this.list.length - 1;
+      } else {
+        this.slideActive--;
+      }
     },
   },
 };
