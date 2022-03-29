@@ -1,13 +1,19 @@
 <template>
-  <div v-for="ele in list" :key="ele.id" :class="$style.carousel">
-    <InfoCarousel
-      :id="ele.id"
-      :linkList="ele.linkList"
-      :tagList="ele.tagList"
-    />
-    <div :class="$style.backinfo" />
-    <div :class="$style.backTransparent" />
-    <img :class="$style.pic" :src="getImageURL(ele.pic)" />
+  <div :class="$style.carousel">
+    <div
+      v-for="(ele, index) in list"
+      :class="[$style.slide, index === slideActive ? $style.active : '']"
+      :key="ele.id"
+    >
+      <InfoCarousel
+        :id="ele.id"
+        :linkList="ele.linkList"
+        :tagList="ele.tagList"
+      />
+      <div :class="$style.backinfo" />
+      <div :class="$style.backTransparent" />
+      <img :class="$style.pic" :src="getImageURL(ele.pic)" />
+    </div>
     <font-awesome-icon
       :class="[$style.left, $style.arrow]"
       :icon="['fa', 'circle-chevron-left']"
@@ -25,6 +31,11 @@ import InfoCarousel from "./InfoCarousel.vue";
 export default {
   name: "ProjectCarousel",
   components: { InfoCarousel },
+  data() {
+    return {
+      slideActive: 0,
+    };
+  },
   props: {
     list: Array,
   },
@@ -37,14 +48,20 @@ export default {
 </script>
 
 <style module>
-/*
-:src="`assets/${ele.pic}`"
-*/
 .carousel {
   height: 300px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
+
+.carousel .slide {
+  visibility: hidden;
+}
+
+.carousel .slide.active {
+  visibility: visible;
+}
+
 .backinfo {
   position: absolute;
   top: 0px;

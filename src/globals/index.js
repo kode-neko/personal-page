@@ -36,6 +36,6 @@ const projectCheety = {
   pic: "lionmiss.png",
   tagList: ["vue", "pineaple", "node", "mongo"],
 };
-const projecList = [projectLionMiss];
+const projecList = [projectLionMiss, projectCheety];
 
 export { techList, tagColor, projecList };
