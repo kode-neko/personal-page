@@ -1,7 +1,8 @@
 <template>
-  <a :href="link" :class="[$style.back, $style[color]]"
-    ><font-awesome-icon :icon="icon"
-  /></a>
+  <a :href="link" :class="$style.cont"
+    ><div :class="[$style.back, $style[color]]">
+      <font-awesome-icon :icon="icon" /></div
+  ></a>
 </template>
 
 <script>
@@ -27,6 +28,10 @@ export default {
 </script>
 
 <style module>
+.cont {
+  display: inline-block;
+}
+
 .back {
   width: 32px;
   height: 32px;
