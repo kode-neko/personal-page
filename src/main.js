@@ -9,7 +9,13 @@ import {
   faCodepen,
   faPinterest,
 } from "@fortawesome/free-brands-svg-icons";
-import { faBolt, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBolt,
+  faCoffee,
+  faLink,
+  faCircleChevronLeft,
+  faCircleChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import App from "./App.vue";
 
@@ -21,7 +27,17 @@ const i18n = createI18n({
 });
 
 // fontawesome
-library.add([faTwitter, faGithub, faCodepen, faBolt, faCoffee, faPinterest]);
+library.add([
+  faTwitter,
+  faGithub,
+  faCodepen,
+  faBolt,
+  faCoffee,
+  faLink,
+  faPinterest,
+  faCircleChevronLeft,
+  faCircleChevronRight,
+]);
 
 const app = createApp(App);
 app.use(i18n);

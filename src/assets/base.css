@@ -5,8 +5,25 @@
 
 body {
   min-height: 100vh;
-  background: url("https://www.transparenttextures.com/patterns/asfalt-light.png") fixed,
+  background: url("https://www.transparenttextures.com/patterns/asfalt-light.png")
+      fixed,
     var(--black);
   color: var(--white);
   font-family: "Roboto", sans-serif;
+}
+
+.green {
+  background-color: var(--tag-green);
+}
+.purple {
+  background-color: var(--purple-mid);
+}
+.darkPurple {
+  background-color: var(--tag-purple-dark);
+}
+.bluePurple {
+  background-color: var(--tag-vio-blue);
+}
+.orange {
+  background-color: var(--tag-orange);
 }

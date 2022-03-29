@@ -24,7 +24,7 @@ export default {
   background-color: var(--black);
   display: flex;
   align-content: center;
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 </style>

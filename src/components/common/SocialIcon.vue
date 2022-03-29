@@ -1,5 +1,7 @@
 <template>
-  <a :href="link" :class="[$style.back]"><font-awesome-icon :icon="icon" /></a>
+  <a :href="link" :class="[$style.back, $style[color]]"
+    ><font-awesome-icon :icon="icon"
+  /></a>
 </template>
 
 <script>
@@ -11,6 +13,10 @@ export default {
       default() {
         return ["fab", "twitter"];
       },
+    },
+    color: {
+      type: String,
+      default: "dark",
     },
     link: {
       type: String,
@@ -25,7 +31,6 @@ export default {
   width: 32px;
   height: 32px;
   border-radius: 4px;
-  background: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +39,6 @@ export default {
   position: relative;
   bottom: 0;
   right: 0;
-
   transition: bottom 0.3s, right 0.3s, box-shadow 0.3s;
 }
 
@@ -42,5 +46,24 @@ export default {
   bottom: 1px;
   right: 1px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark {
+  background: var(--black);
+}
+.green {
+  background: var(--tag-green);
+}
+.purple {
+  background: var(--purple-mid);
+}
+.darkPurple {
+  background: var(--tag-purple-dark);
+}
+.bluePurple {
+  background: var(--tag-vio-blue);
+}
+.orange {
+  background: var(--tag-orange);
 }
 </style>

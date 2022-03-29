@@ -8,7 +8,7 @@
       <BoxContent title="Experiencia"><ExperienceSection /></BoxContent>
     </div>
     <div :class="$style.sections">
-      <BoxContent title="Proyectos"></BoxContent>
+      <BoxContent title="Projectos"><ProjectSection /></BoxContent>
     </div>
     <div :class="$style.sections">
       <BoxContent title="Contacto"><ContactSection /></BoxContent>
@@ -22,6 +22,7 @@ import BoxContent from "./BoxContent.vue";
 import TechSection from "./sections/TechSection.vue";
 import ExperienceSection from "./sections/ExperienceSection.vue";
 import ContactSection from "./sections/ContactSection.vue";
+import ProjectSection from "./sections/ProjectSection.vue";
 
 export default {
   name: "MainContent",
@@ -31,6 +32,7 @@ export default {
     TechSection,
     ExperienceSection,
     ContactSection,
+    ProjectSection,
   },
 };
 </script>
