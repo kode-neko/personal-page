@@ -1,5 +1,9 @@
 @import "colors.css";
 
+.black {
+  background-color: var(--black);
+}
+
 /* Regular */
 .green {
   background-color: var(--tag-green);
@@ -49,6 +53,43 @@
 }
 .orangeDark02 {
   background-color: var(--tag-orange-dark-02);
+}
+
+/* Gradient */
+.greenGradient {
+  background: linear-gradient(
+    135deg,
+    var(--tag-green) 0%,
+    var(--tag-green-dark) 80%
+  );
+}
+.purpleGradient {
+  background: linear-gradient(
+    135deg,
+    var(--purple-mid) 0%,
+    var(--purple-mid-dark) 80%
+  );
+}
+.purpleDarkGradient {
+  background: linear-gradient(
+    135deg,
+    var(--tag-purple-dark) 0%,
+    var(--tag-purple-dark-dark) 80%
+  );
+}
+.vioBlueGradient {
+  background: linear-gradient(
+    135deg,
+    var(--tag-vio-blue) 0%,
+    var(--tag-vio-blue-dark) 80%
+  );
+}
+.orangeGradient {
+  background: linear-gradient(
+    135deg,
+    var(--tag-orange) 0%,
+    var(--tag-orange-dark) 80%
+  );
 }
 
 /* Trans */

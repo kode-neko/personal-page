@@ -1,7 +1,7 @@
 <template>
-  <div :class="$style.info">
-    <div :class="$style.title">
-      <h3>{{ $t(`projects.${id}.title`) }}</h3>
+  <div :class="[$style.cont, `${color}Gradient`]">
+    <div :class="$style.header">
+      <h3 :class="$style.title">{{ $t(`projects.${id}.title`) }}</h3>
       <div :class="$style.links">
         <SocialIcon
           v-for="link in linkList"
@@ -11,7 +11,7 @@
         />
       </div>
     </div>
-    <p>
+    <p :class="$style.desc">
       {{ $t(`projects.${id}.desc`) }}
     </p>
     <div :class="$style.tags">
@@ -30,7 +30,7 @@ import { getColor } from "../../../utils";
 import InfoTag from "../InfoTag.vue";
 import SocialIcon from "../SocialIcon.vue";
 export default {
-  name: "InfoCarousel",
+  name: "InfoAreaCarousel",
   props: {
     id: String,
     linkList: Array,
@@ -50,35 +50,37 @@ export default {
 <style module>
 @import "@/assets/backs.css";
 
-.info {
-  padding-right: 64px;
-  position: absolute;
-  width: 50%;
+.cont {
   height: 100%;
+  display: inline-block;
+  width: 50%;
+  background-color: bisque;
+  border-radius: 0 8px 8px 0;
   box-sizing: border-box;
-  z-index: 2;
-  right: 4px;
-  top: 20px;
+  padding: 20px;
+  padding-right: 60px;
+  position: absolute;
+  left: 50%;
 }
-.info .title {
+.cont .header {
   margin-bottom: 10px;
 }
-.info .title h3 {
+.cont .header .title {
   display: inline-block;
   font-size: 52px;
   font-family: "Saira Condensed", sans-serif;
   margin-right: 20px;
 }
-.info .title .links {
+.cont .header .links {
   display: inline-block;
   gap: 10px;
   position: relative;
   top: -6px;
 }
-.info .title .links >* {
+.cont .header .links > * {
   margin-right: 10px;
 }
-.info p {
+.cont .desc {
   font-size: 16px;
   margin-bottom: 40px;
   color: var(--white);

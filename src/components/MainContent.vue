@@ -38,9 +38,10 @@ export default {
 </script>
 
 <style module>
+@import "@/assets/colors.css";
 .cont {
   flex-basis: 100%;
-  background: linear-gradient(180deg, #40216065 0%, var(--black) 45%),
+  background: linear-gradient(180deg, #40216065 0%, var(--black) 20%),
     url("../assets/starnight.jpg") no-repeat left -375px / 1200px auto;
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.4), 6px 0px 4px rgba(0, 0, 0, 0.4);
   padding: 40px;
