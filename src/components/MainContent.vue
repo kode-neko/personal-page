@@ -57,6 +57,7 @@ export default {
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.4), 6px 0px 4px rgba(0, 0, 0, 0.4);
   margin-left: 274px;
   padding: 40px;
+  padding-bottom: 300px;
   position: relative;
 }
 

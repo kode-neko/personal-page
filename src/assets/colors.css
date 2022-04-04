@@ -1,10 +1,10 @@
 :root {
-  --black: #120c14;
+  --black: rgba(18,12,20,1.0);
   --black-second: #241828;
-  --black-box: #2c1f3036;
+  --black-box: rgba(86,8,85,0.20);
   --white: #f9f1ff;
-  --purple-dark: #560855;
-  --purple-mid: #a3268f;
+  --purple-dark: rgba(86,8,85,1.0);
+  --purple-mid: rgba(163,38,143,1.0);
   --purple-light: #a979b0;
 
   --tag-green: #146284;
@@ -24,9 +24,9 @@
   --tag-vio-blue-dark-02: #26094b;
   --tag-orange-dark-02: #3b2100;
 
-  --purple-mid-trans: rgba(163,38,142,0.2);
-  --tag-green-trans: rgba(20,98,132,0.2);
-  --tag-purple-dark-trans: rgba(107,12,93,0.2);
-  --tag-vio-blue-trans: rgba(120,61,197,0.2);
-  --tag-orange-trans: rgba(188,103,0,0.2);
+  --purple-mid-trans: rgba(163,38,142,0.4);
+  --tag-green-trans: rgba(20,98,132,0.4);
+  --tag-purple-dark-trans: rgba(107,12,93,0.4);
+  --tag-vio-blue-trans: rgba(120,61,197,0.4);
+  --tag-orange-trans: rgba(188,103,0,0.4);
 }

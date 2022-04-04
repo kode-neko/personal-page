@@ -94,7 +94,11 @@ export default {
       this.sending = true;
       setTimeout(() => {
         this.sending = false;
-      }, 5000);
+        this.$notify({
+          text: "📭 El mensaje ha sido enviado con éxito",
+          duration: -1
+        });
+      }, 1);
     },
   },
   validations() {
@@ -151,12 +155,13 @@ form {
   height: 22px;
 }
 .field textarea {
-  height: 300px;
+  height: 200px;
 }
 .hint {
   font-style: italic;
-  color: var(--purple-dark);
+  color: var(--purple-mid);
   height: 16px;
+  text-align: right;
 }
 .footer {
   margin-top: 40px;

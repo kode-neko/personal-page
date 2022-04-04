@@ -85,4 +85,9 @@ export default {
   margin-bottom: 40px;
   color: var(--white);
 }
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 </style>

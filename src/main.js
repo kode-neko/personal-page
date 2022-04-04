@@ -19,6 +19,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import App from "./App.vue";
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
+import Notifications from "@kyvg/vue3-notification";
 
 // vue-i18n
 const i18n = createI18n({
@@ -43,6 +44,7 @@ library.add([
 const app = createApp(App);
 app.use(i18n);
 app.use(createPinia());
+app.use(Notifications);
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.component("scroll-parallax", ScrollParallax);
 app.mount("#app");

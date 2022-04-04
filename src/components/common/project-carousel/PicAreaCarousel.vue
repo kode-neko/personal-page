@@ -3,7 +3,6 @@
     <div :class="[$style.colorTrans, $style[`${color}Trans`]]" />
     <img :class="$style.pic" :src="getImgURL('../assets/' + pic)" />
   </div>
-  ..
 </template>
 
 <script>
@@ -22,6 +21,8 @@ export default {
 </script>
 
 <style module>
+@import "@/assets/backs.css";
+
 .picArea {
   height: 100%;
   display: inline-block;

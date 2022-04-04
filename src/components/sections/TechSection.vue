@@ -1,16 +1,19 @@
 <template>
   <div :class="$style.cont">
-    <div @mouseleave="getDescription()">
+    <div :class="$style.tags" @mouseleave="getDescription()">
       <TagTech
         v-for="(tech, index) in techList"
         v-bind:key="tech"
         :label="$t(`tech.${tech}.name`)"
+        :cursor="true"
         :color="tagColor[getColor(index)]"
         @mouseover="getDescription(tech)"
       />
     </div>
     <div :class="$style.description">
-      <p>{{ $t(description) }}</p>
+      <Transition name="desc" mode="out-in">
+        <p :key="description">{{ $t(description) }}</p>
+      </Transition>
     </div>
   </div>
 </template>
@@ -38,9 +41,25 @@ export default {
 };
 </script>
 
+<style>
+.desc-enter-active,
+.desc-leave-active {
+  transition: opacity 0.3s ease;
+}
+.desc-enter-from,
+.desc-leave-to {
+  opacity: 0;
+}
+</style>
+
 <style module>
 .cont {
   display: flex;
+}
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .description {
   flex-basis: 600px;
