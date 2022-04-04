@@ -1,5 +1,5 @@
 <template>
-  <div :class="[$style.cont, `${color}Gradient`]">
+  <div :class="[$style.cont, $style[`${color}Gradient`]]">
     <div :class="$style.header">
       <h3 :class="$style.title">{{ $t(`projects.${id}.title`) }}</h3>
       <div :class="$style.links">

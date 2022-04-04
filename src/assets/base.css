@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap");
 
 body {
-  min-height: 100vh;
   background: url("https://www.transparenttextures.com/patterns/asfalt-light.png")
       fixed,
     var(--black);

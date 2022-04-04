@@ -63,7 +63,6 @@ export default {
   position: relative;
   height: 300px;
 }
-
 .slide {
   height: 100%;
   width: 100%;

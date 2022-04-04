@@ -1,11 +1,14 @@
 <template>
   <div :class="$style.picArea">
-    <div :class="[$style.colorTrans, `${color}Trans`]" />
-    <img :class="$style.pic" :src="getImageURL(pic)" />
+    <div :class="[$style.colorTrans, $style[`${color}Trans`]]" />
+    <img :class="$style.pic" :src="getImgURL('../assets/' + pic)" />
   </div>
+  ..
 </template>
 
 <script>
+import { getImgURL } from "../../../utils";
+
 export default {
   name: "PicAreaCarousel",
   props: {
@@ -13,9 +16,7 @@ export default {
     color: String,
   },
   methods: {
-    getImageURL(file) {
-      return new URL(`../../../assets/${file}`, import.meta.url).href;
-    },
+    getImgURL,
   },
 };
 </script>
