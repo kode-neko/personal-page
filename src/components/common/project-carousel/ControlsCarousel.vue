@@ -48,10 +48,10 @@ export default {
 
 <style module>
 .controls {
-  height: 100%;
   width: 100%;
   position: absolute;
   z-index: 4;
+  top: 150px;
 }
 
 .arrow {

@@ -46,12 +46,10 @@ export default {
   position: relative;
   bottom: 0;
   right: 0;
-  transition: bottom 0.3s, right 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s;
 }
 
 .back:hover {
-  bottom: 1px;
-  right: 1px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
 }
 </style>
