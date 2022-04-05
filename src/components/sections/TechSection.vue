@@ -10,11 +10,13 @@
         @mouseover="getDescription(tech)"
       />
     </div>
-    <div :class="$style.description">
-      <Transition name="desc" mode="out-in">
-        <p :key="description">{{ $t(description) }}</p>
-      </Transition>
-    </div>
+    <MqResponsive target="lg+">
+      <div :class="$style.description">
+        <Transition name="desc" mode="out-in">
+          <p :key="description">{{ $t(description) }}</p>
+        </Transition>
+      </div>
+    </MqResponsive>
   </div>
 </template>
 
@@ -22,9 +24,11 @@
 import { techList, tagColor } from "../../globals";
 import { getColor } from "../../utils";
 import TagTech from "../common/InfoTag.vue";
+import { MqResponsive } from "vue3-mq";
+
 export default {
   name: "TechSection",
-  components: { TagTech },
+  components: { TagTech, MqResponsive },
   data() {
     return {
       techList,

@@ -17,7 +17,7 @@
       <font-awesome-icon
         :class="{ [$style.menuBars]: true, [$style.menuBarsActive]: show }"
         :icon="['fas', 'bars']"
-        @click="this.show = !this.show"
+        @click="show = !show"
       />
       <!--
       
@@ -158,25 +158,4 @@ export default {
 .menu ul li {
   width: 100%;
 }
-
-/*
-
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  gap: 10px;
-}
-
-.credits {
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 20px;
-
-  position: absolute;
-  bottom: 40px;
-  text-align: center;
-  width: 100%;
-  margin-left: -20px;
-}*/
 </style>
