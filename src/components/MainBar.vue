@@ -17,7 +17,20 @@
         <MainBtn type="normal">Curriculum</MainBtn>
       </div>
     </nav>
-    <div :class="$style.credits">Kodeneko © 2022</div>
+    <div :class="$style.footer">
+      <div :class="$style.locale">
+        <font-awesome-icon :icon="['fa', 'globe']" /><span
+          :class="{ [$style.type]: true, [$style.selected]: locale === 'es' }"
+          @click="changeLocale('es')"
+          >ES</span
+        ><span
+          :class="{ [$style.type]: true, [$style.selected]: locale === 'en' }"
+          @click="changeLocale('en')"
+          >EN</span
+        >
+      </div>
+      <div :class="$style.credits">Kodeneko © 2022</div>
+    </div>
   </div>
 </template>
 
@@ -27,6 +40,17 @@ import MainBtn from "./common/MainBtn.vue";
 export default {
   name: "MainBar",
   components: { SocialIcon, MainBtn },
+  data() {
+    return {
+      locale: this.$i18n.locale,
+    };
+  },
+  methods: {
+    changeLocale(lang) {
+      this.$i18n.locale = lang;
+      this.locale = lang;
+    },
+  },
 };
 </script>
 
@@ -62,15 +86,39 @@ export default {
   gap: 10px;
 }
 
-.credits {
+.footer {
   font-family: "Saira Condensed", sans-serif;
   font-size: 20px;
-
   position: absolute;
   bottom: 40px;
-  text-align: center;
   width: 100%;
   margin-left: -20px;
 }
 
+.footer .locale {
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  align-items: center;
+}
+
+.footer .locale .type {
+  cursor: pointer;
+}
+
+.footer .locale .type:hover {
+  color: var(--purple-mid);
+}
+
+.footer .locale .selected {
+  color: var(--purple-light);
+}
+
+.footer .credits {
+  text-align: center;
+}
 </style>
