@@ -38,5 +38,6 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  border-top: 1px solid var(--purple-dark);
 }
 </style>
