@@ -15,7 +15,7 @@
     </div>
     <div :class="$style.right">
       <font-awesome-icon
-        :class="$style.menuBars"
+        :class="{ [$style.menuBars]: true, [$style.menuBarsActive]: show }"
         :icon="['fas', 'bars']"
         @click="this.show = !this.show"
       />
@@ -72,13 +72,12 @@ export default {
 <style>
 .menu-enter-active,
 .menu-leave-active {
-  transition: opacity 1s ease;
+  transition: all 0.4s;
 }
 .menu-enter-from,
 .menu-leave-to {
-  opacity: 0;
+  transform: translateY(-84px);
 }
-
 </style>
 
 <style module>
@@ -89,7 +88,7 @@ export default {
   box-sizing: border-box;
   position: fixed;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-  z-index: 5;
+  z-index: 6;
   border-bottom: 1px solid var(--black);
   display: flex;
   justify-content: space-between;
@@ -121,8 +120,17 @@ export default {
 }
 
 .right .menuBars {
-  fill: var(--white);
+  color: var(--white);
   height: 32px;
+  cursor: pointer;
+}
+
+.right .menuBars:hover {
+  color: var(--purple-mid);
+}
+
+.right .menuBarsActive {
+  color: var(--purple-mid);
 }
 
 .menu {
@@ -133,7 +141,6 @@ export default {
   top: 63px;
   width: 100%;
   background: #9164a0;
-  display: relative;
   padding: 20px 40px;
   box-sizing: border-box;
 }
