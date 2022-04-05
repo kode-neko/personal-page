@@ -5,8 +5,8 @@
     :class="{
       [$style.main]: type === 'main',
       [$style.normal]: type === 'normal',
-      [$style.medium]: type === 'medium',
-      [$style.small]: type === 'small',
+      [$style.medium]: size === 'medium',
+      [$style.small]: size === 'small',
       [$style.back]: true,
     }"
     ><slot></slot

@@ -14,22 +14,41 @@
       </ul>
     </div>
     <div :class="$style.right">
-      <font-awesome-icon :class="$style.menuBars" :icon="['fas', 'bars']" />
+      <font-awesome-icon
+        :class="$style.menuBars"
+        :icon="['fas', 'bars']"
+        @click="this.show = !this.show"
+      />
       <!--
       
       <div :class="$style.credits">Kodeneko © 2022</div>
       -->
     </div>
   </div>
-  <nav :class="[$style.menu]">
-    <ul>
-      <li><MainBtn type="main" size="small">Artículos</MainBtn></li>
-      <li>
-        <MainBtn type="normal" size="small" link="#contact">Contacto</MainBtn>
-      </li>
-      <li><MainBtn type="normal" size="small">Curriculum</MainBtn></li>
-    </ul>
-  </nav>
+  <Transition name="menu">
+    <nav v-if="show" :class="[$style.menu]">
+      <MqResponsive target="md+">
+        <ul>
+          <li><MainBtn type="main">Artículos</MainBtn></li>
+          <li>
+            <MainBtn type="normal" link="#contact">Contacto</MainBtn>
+          </li>
+          <li><MainBtn type="normal">Curriculum</MainBtn></li>
+        </ul>
+      </MqResponsive>
+      <MqResponsive target="sm-">
+        <ul :class="$style.res">
+          <li><MainBtn type="main" size="small">Artículos</MainBtn></li>
+          <li>
+            <MainBtn type="normal" size="small" link="#contact"
+              >Contacto</MainBtn
+            >
+          </li>
+          <li><MainBtn type="normal" size="small">Curriculum</MainBtn></li>
+        </ul>
+      </MqResponsive>
+    </nav>
+  </Transition>
 </template>
 
 <script>
@@ -44,10 +63,23 @@ export default {
   data() {
     return {
       logo,
+      show: false,
     };
   },
 };
 </script>
+
+<style>
+.menu-enter-active,
+.menu-leave-active {
+  transition: opacity 1s ease;
+}
+.menu-enter-from,
+.menu-leave-to {
+  opacity: 0;
+}
+
+</style>
 
 <style module>
 .cont {
@@ -109,6 +141,10 @@ export default {
 .menu ul {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+}
+
+.menu ul.res {
   gap: 10px;
 }
 
