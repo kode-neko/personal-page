@@ -1,11 +1,11 @@
 :root {
   --black: rgba(18,12,20,1.0);
-  --black-second: #241828;
+  --black-second: rgba(36,24,40,1.0);
   --black-box: rgba(86,8,85,0.20);
-  --white: #f9f1ff;
-  --purple-dark: rgba(86,8,85,1.0);
-  --purple-mid: rgba(163,38,143,1.0);
-  --purple-light: #a979b0;
+  --white: rgb(249, 241, 255);
+  --purple-dark: rgb(86, 8, 85);
+  --purple-mid: rgb(163, 38, 143);
+  --purple-light: rgb(169, 121, 176);
 
   --tag-green: #146284;
   --tag-purple-dark: #6b0c5c;

@@ -1,24 +1,35 @@
 <template>
-  <div :class="[$style.mainContainer]">
-    <MainBar />
-    <MainContent />
-    <notifications
-      position="bottom right"
-      width="400px"
-      classes="notification"
-    />
-  </div>
+  <scrollbar id="sb">
+    <div :class="[$style.mainContainer]">
+      <MqResponsive target="lg+">
+        <MainBar />
+      </MqResponsive>
+      <MqResponsive target="lg-">
+        <MainBarMobile />
+      </MqResponsive>
+      <MainContent />
+      <notifications
+        position="bottom right"
+        width="400px"
+        classes="notification"
+      />
+    </div>
+  </scrollbar>
 </template>
 
 <script>
 import MainBar from "@/components/MainBar.vue";
+import MainBarMobile from "@/components/MainBarMobile.vue";
 import MainContent from "@/components/MainContent.vue";
+import { MqResponsive } from "vue3-mq";
 
 export default {
   name: "App",
   components: {
     MainBar,
+    MainBarMobile,
     MainContent,
+    MqResponsive,
   },
 };
 </script>
@@ -48,5 +59,11 @@ export default {
   align-content: center;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+@media all and (max-width: 1200px) {
+  .mainContainer {
+    flex-direction: column;
+  }
 }
 </style>

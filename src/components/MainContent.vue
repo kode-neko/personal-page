@@ -64,4 +64,12 @@ export default {
 .cont .header {
   margin-bottom: 110px;
 }
+
+@media all and (max-width: 1200px) {
+  .cont {
+    margin: 0;
+    margin-top: 63px;
+    padding: 20px;
+  }
+}
 </style>

@@ -1,9 +1,12 @@
 <template>
   <a
     :href="link"
+    v-smooth-scroll
     :class="{
       [$style.main]: type === 'main',
       [$style.normal]: type === 'normal',
+      [$style.medium]: type === 'medium',
+      [$style.small]: type === 'small',
       [$style.back]: true,
     }"
     ><slot></slot
@@ -20,6 +23,17 @@ export default {
         return ["main", "normal"].includes(value);
       },
     },
+    size: {
+      type: String,
+      validator(value) {
+        return ["medium", "small"].includes(value);
+      },
+      default: "medium",
+    },
+    link: {
+      type: String,
+      default: "#",
+    },
   },
 };
 </script>
@@ -28,7 +42,7 @@ export default {
 .back {
   width: 100%;
   text-align: center;
-  font-size: 24px;
+
   color: var(--white);
   font-family: "Saira Condensed", sans-serif;
   padding: 10px 0;
@@ -38,8 +52,9 @@ export default {
   bottom: 0;
   right: 0;
   cursor: pointer;
-
+  text-decoration: none;
   transition: bottom 0.3s, right 0.3s, box-shadow 0.3s;
+  display: inline-block;
 }
 
 .back:hover {
@@ -55,5 +70,13 @@ export default {
 
 .normal {
   background-color: var(--purple-dark);
+}
+
+.medium {
+  font-size: 24px;
+}
+
+.small {
+  font-size: 18px;
 }
 </style>

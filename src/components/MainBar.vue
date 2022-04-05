@@ -1,19 +1,20 @@
 <template>
-  <div :class="[$style.cont]">
+  <div :class="$style.cont">
     <div>
-      <img :class="[$style.logo]" src="@/assets/logo.svg" />
+      <img :class="$style.logo" src="@/assets/logo.svg" />
     </div>
+    <ul :class="[$style.social]">
+      <li><SocialIcon :icon="['fab', 'twitter']" /></li>
+      <li><SocialIcon :icon="['fab', 'github']" /></li>
+      <li><SocialIcon :icon="['fab', 'codepen']" /></li>
+      <li><SocialIcon :icon="['fa', 'bolt']" /></li>
+      <li><SocialIcon :icon="['fab', 'pinterest']" /></li>
+    </ul>
     <nav>
-      <ul :class="[$style.social]">
-        <li><SocialIcon :icon="['fab', 'twitter']" /></li>
-        <li><SocialIcon :icon="['fab', 'github']" /></li>
-        <li><SocialIcon :icon="['fab', 'codepen']" /></li>
-        <li><SocialIcon :icon="['fa', 'bolt']" /></li>
-        <li><SocialIcon :icon="['fab', 'pinterest']" /></li>
-      </ul>
       <div :class="[$style.menu]">
         <MainBtn type="main">Artículos</MainBtn>
-        <MainBtn type="normal">Contacto</MainBtn>
+        <MainBtn type="normal" link="#contact">Contacto</MainBtn>
+        <MainBtn type="normal">Curriculum</MainBtn>
       </div>
     </nav>
     <div :class="$style.credits">Kodeneko © 2022</div>
@@ -43,6 +44,10 @@ export default {
   width: 234px;
 }
 
+.iconBtn {
+  margin-right: 10px;
+}
+
 .social {
   margin-top: 40px;
   display: flex;
@@ -67,4 +72,5 @@ export default {
   width: 100%;
   margin-left: -20px;
 }
+
 </style>
