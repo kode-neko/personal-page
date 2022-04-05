@@ -46,4 +46,13 @@ export default {
   left: 0;
   z-index: 0;
 }
+
+@media all and (max-width: 992px) {
+  .picArea {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: 270px;
+    position: relative;
+  }
+}
 </style>

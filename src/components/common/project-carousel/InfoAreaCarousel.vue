@@ -90,4 +90,25 @@ export default {
   flex-wrap: wrap;
   gap: 10px;
 }
+@media all and (max-width: 992px) {
+  .cont {
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    height: 150px;
+    left: 0;
+    position: relative;
+    padding-right: 20px;
+  }
+  .cont .header .title {
+    font-size: 42px;
+  }
+  .desc {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .cont {
+    height: 200px;
+  }
+}
 </style>

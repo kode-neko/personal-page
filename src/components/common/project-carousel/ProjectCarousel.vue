@@ -70,4 +70,10 @@ export default {
   top: 0;
   left: 0;
 }
+
+@media all and (max-width: 992px) {
+  .carousel {
+    height: 500px;
+  }
+}
 </style>
