@@ -18,17 +18,7 @@
       </div>
     </nav>
     <div :class="$style.footer">
-      <div :class="$style.locale">
-        <font-awesome-icon :icon="['fa', 'globe']" /><span
-          :class="{ [$style.type]: true, [$style.selected]: locale === 'es' }"
-          @click="changeLocale('es')"
-          >ES</span
-        ><span
-          :class="{ [$style.type]: true, [$style.selected]: locale === 'en' }"
-          @click="changeLocale('en')"
-          >EN</span
-        >
-      </div>
+      <LocaleSelector />
       <div :class="$style.credits">Kodeneko © 2022</div>
     </div>
   </div>
@@ -37,9 +27,11 @@
 <script>
 import SocialIcon from "./common/SocialIcon.vue";
 import MainBtn from "./common/MainBtn.vue";
+import LocaleSelector from "./common/LocaleSelector.vue";
+
 export default {
   name: "MainBar",
-  components: { SocialIcon, MainBtn },
+  components: { SocialIcon, MainBtn, LocaleSelector },
   data() {
     return {
       locale: this.$i18n.locale,
@@ -95,30 +87,8 @@ export default {
   margin-left: -20px;
 }
 
-.footer .locale {
-  text-align: center;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 24px;
-  align-items: center;
-}
-
-.footer .locale .type {
-  cursor: pointer;
-}
-
-.footer .locale .type:hover {
-  color: var(--purple-mid);
-}
-
-.footer .locale .selected {
-  color: var(--purple-light);
-}
-
 .footer .credits {
   text-align: center;
+  margin-top: 20px;
 }
 </style>
