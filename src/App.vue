@@ -13,6 +13,9 @@
         width="400px"
         classes="notification"
       />
+      <MqResponsive target="lg-">
+        <FooterBarMobile />
+      </MqResponsive>
     </div>
   </scrollbar>
 </template>
@@ -21,6 +24,7 @@
 import MainBar from "@/components/MainBar.vue";
 import MainBarMobile from "@/components/MainBarMobile.vue";
 import MainContent from "@/components/MainContent.vue";
+import FooterBarMobile from "@/components/FooterBarMobile.vue";
 import { MqResponsive } from "vue3-mq";
 
 export default {
@@ -29,6 +33,7 @@ export default {
     MainBar,
     MainBarMobile,
     MainContent,
+    FooterBarMobile,
     MqResponsive,
   },
 };
