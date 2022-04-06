@@ -62,6 +62,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import ActionBtn from "../common/ActionBtn.vue";
 import useVuelidate from "@vuelidate/core";
 import {
@@ -71,6 +72,7 @@ import {
   maxLength,
   helpers,
 } from "@vuelidate/validators";
+
 export default {
   name: "ContactSection",
   components: { ActionBtn },
@@ -92,13 +94,28 @@ export default {
   methods: {
     sendMsg() {
       this.sending = true;
-      setTimeout(() => {
-        this.sending = false;
-        this.$notify({
-          text: "📭 El mensaje ha sido enviado con éxito",
-          duration: -1
+      axios
+        .post(
+          `${import.meta.env.VITE_CONTACT_SERVER}:${
+            import.meta.env.VITE_CONTACT_PORT
+          }/contact`,
+          this.msg
+        )
+        .then(() =>
+          this.$notify({
+            text: "📭 El mensaje ha sido enviado con éxito",
+            duration: -1,
+          })
+        )
+        .catch(() =>
+          this.$notify({
+            text: "💀 Hubo un error al enviar el mensaje",
+            duration: -1,
+          })
+        )
+        .finally(() => {
+          this.sending = false;
         });
-      }, 1);
     },
   },
   validations() {

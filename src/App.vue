@@ -46,7 +46,7 @@ export default {
   font-family: "Roboto", sans-serif;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   padding: 20px;
   font-size: 18px;
   color: var(--white);
