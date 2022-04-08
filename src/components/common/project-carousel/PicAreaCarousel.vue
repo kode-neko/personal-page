@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.picArea">
     <div :class="[$style.colorTrans, $style[`${color}Trans`]]" />
-    <img :class="$style.pic" :src="getImgURL('../assets/' + pic)" />
+    <img :class="$style.pic" :src="pic" />
   </div>
 </template>
 

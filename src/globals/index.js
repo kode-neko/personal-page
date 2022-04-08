@@ -1,3 +1,5 @@
+import lionmissPic from '@/assets/lionmiss.png';
+
 const techList = [
   "react",
   "redux",
@@ -26,7 +28,7 @@ const projectLionMiss = {
     { id: "github", icon: ["fab", "github"], link: "", alt: "" },
     { id: "link", icon: ["fa", "link"], link: "", alt: "" },
   ],
-  pic: "lionmiss.png",
+  pic: lionmissPic,
   tagList: ["react", "redux", "node", "mongo"],
   color: "purple",
 };
@@ -34,7 +36,7 @@ const projectCheety = {
   id: "cheety",
   github: "",
   link: "",
-  pic: "lionmiss.png",
+  pic: lionmissPic,
   tagList: ["vue", "pineaple", "node", "mongo"],
   color: "green",
 };
