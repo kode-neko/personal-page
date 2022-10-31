@@ -14,6 +14,7 @@
         classes="notification"
       />
       <MqResponsive target="lg-">
+        <FooterSocialMobile />
         <FooterBarMobile />
       </MqResponsive>
     </div>
@@ -23,6 +24,7 @@
 <script>
 import MainBar from "@/components/MainBar.vue";
 import MainBarMobile from "@/components/MainBarMobile.vue";
+import FooterSocialMobile from "@/components/FooterSocialMobile.vue";
 import MainContent from "@/components/MainContent.vue";
 import FooterBarMobile from "@/components/FooterBarMobile.vue";
 import { MqResponsive } from "vue3-mq";
@@ -34,6 +36,7 @@ export default {
     MainBarMobile,
     MainContent,
     FooterBarMobile,
+    FooterSocialMobile,
     MqResponsive,
   },
 };

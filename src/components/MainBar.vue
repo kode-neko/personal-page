@@ -4,11 +4,9 @@
       <img :class="$style.logo" src="@/assets/logo.svg" />
     </div>
     <ul :class="[$style.social]">
-      <li><SocialIcon :icon="['fab', 'twitter']" /></li>
-      <li><SocialIcon :icon="['fab', 'github']" /></li>
-      <li><SocialIcon :icon="['fab', 'codepen']" /></li>
-      <li><SocialIcon :icon="['fa', 'bolt']" /></li>
-      <li><SocialIcon :icon="['fab', 'pinterest']" /></li>
+      <li v-for="social in socialList" :key="social.name">
+        <SocialIcon :icon="social.icon" :link="social.url" />
+      </li>
     </ul>
     <nav>
       <div :class="[$style.menu]">
@@ -28,6 +26,7 @@
 import SocialIcon from "./common/SocialIcon.vue";
 import MainBtn from "./common/MainBtn.vue";
 import LocaleSelector from "./common/LocaleSelector.vue";
+import { socialList } from "../globals";
 
 export default {
   name: "MainBar",
@@ -35,12 +34,16 @@ export default {
   data() {
     return {
       locale: this.$i18n.locale,
+      socialList,
     };
   },
   methods: {
     changeLocale(lang) {
       this.$i18n.locale = lang;
       this.locale = lang;
+    },
+    handleClickSocial(social) {
+      window.open(social.url);
     },
   },
 };

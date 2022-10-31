@@ -1,19 +1,29 @@
 <template>
   <div :class="$style.cont">
-    <div :class="$style.tags" @mouseleave="getDescription()">
+    <div :class="$style.tags" @mouseleave="getInfo()">
       <TagTech
         v-for="(tech, index) in techList"
         v-bind:key="tech"
         :label="$t(`tech.${tech}.name`)"
         :cursor="true"
         :color="tagColor[getColor(index)]"
-        @mouseover="getDescription(tech)"
+        @mouseover="getInfo(tech)"
       />
     </div>
-    <MqResponsive target="lg+">
+    <MqResponsive target="lg+" :class="$style.test">
       <div :class="$style.description">
         <Transition name="desc" mode="out-in">
-          <p :key="description">{{ $t(description) }}</p>
+          <div>
+            <h3 v-if="name">
+              <span>{{ $t(name) }}</span>
+              <span
+                v-if="version && $t(version).length !== 0"
+                :class="$style.version"
+                >v.{{ $t(version) }}</span
+              >
+            </h3>
+            <p :key="description">{{ $t(description) }}</p>
+          </div>
         </Transition>
       </div>
     </MqResponsive>
@@ -33,13 +43,17 @@ export default {
     return {
       techList,
       tagColor,
-      description: "tech.msg",
+      name: "tech.angular.name",
+      description: "tech.angular.desc",
+      version: "tech.angular.version",
     };
   },
   methods: {
     getColor,
-    getDescription(tech) {
+    getInfo(tech) {
+      this.name = tech ? `tech.${tech}.name` : undefined;
       this.description = tech ? `tech.${tech}.desc` : "tech.msg";
+      this.version = tech ? `tech.${tech}.version` : undefined;
     },
   },
 };
@@ -59,16 +73,31 @@ export default {
 <style module>
 .cont {
   display: flex;
+  align-items: flex-start;
 }
 .tags {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
+.test {
+  flex-basis: 900px;
+}
 .description {
-  flex-basis: 600px;
   padding: 0 20px;
   box-sizing: border-box;
   border-left: 1px solid var(--purple-dark);
+  height: 200px;
+}
+
+.description .version {
+  margin-left: 10px;
+}
+
+.description h3 {
+  margin-bottom: 10px;
+}
+.description p {
+  text-align: left;
 }
 </style>

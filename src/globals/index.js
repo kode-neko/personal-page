@@ -1,27 +1,65 @@
-import lionmissPic from '@/assets/lionmiss.png';
+import lionmissPic from "@/assets/lionmiss.png";
+
+const socialList = [
+  {
+    name: "twitter",
+    icon: ["fab", "twitter"],
+    url: "https://twitter.com/KodenekoFront",
+  },
+  {
+    name: "facebook",
+    icon: ["fab", "facebook"],
+    url: "https://www.facebook.com/profile.php?id=100079192857532",
+  },
+  {
+    name: "github",
+    icon: ["fab", "github"],
+    url: "https://github.com/kode-neko",
+  },
+  {
+    name: "codepen",
+    icon: ["fab", "codepen"],
+    url: "https://codepen.io/kodeneko",
+  },
+  {
+    name: "stackblitz",
+    icon: ["fa", "bolt"],
+    url: "https://stackblitz.com/@kode-neko",
+  },
+  {
+    name: "figma",
+    icon: ["fab", "figma"],
+    url: "https://www.figma.com/file/4a3GUeevphKRrutthOtAdU/Dark",
+  },
+];
 
 const techList = [
+  "html",
+  "css",
+  "ES",
+  "typescript",
   "react",
   "redux",
   "vue",
+  "pinia",
   "angular",
-  "pineaple",
   "node",
   "express",
-  "mongo",
-  "graphql",
-  "typescript",
+  "mongoose",
+  "sequalize",
+  "apollo",
   "webpack",
-  "roller",
-  "npmYarn",
-  "php",
-  "laravel",
-  "wordpress",
+  "docker",
+  "npm",
+  "yarn",
+  "mongo",
   "mariadb",
-  "visualCode",
-  "github",
+  "visualcode",
+  "git",
 ];
+
 const tagColor = ["green", "purple", "orange", "darkPurple", "bluePurple"];
+
 const projectLionMiss = {
   id: "lionmiss",
   linkList: [
@@ -42,4 +80,4 @@ const projectCheety = {
 };
 const projecList = [projectLionMiss, projectCheety];
 
-export { techList, tagColor, projecList };
+export { socialList, techList, tagColor, projecList };

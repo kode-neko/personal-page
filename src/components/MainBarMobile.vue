@@ -1,17 +1,7 @@
 <template>
   <div :class="$style.cont">
     <div :class="$style.left">
-      <MqResponsive target="md+"
-        ><h1 :class="$style.name">Kode Neko</h1></MqResponsive
-      >
-      <MqResponsive target="sm-"><h1 :class="$style.name">KN</h1></MqResponsive>
-      <ul :class="[$style.social]">
-        <li><SocialIcon :icon="['fab', 'twitter']" /></li>
-        <li><SocialIcon :icon="['fab', 'github']" /></li>
-        <li><SocialIcon :icon="['fab', 'codepen']" /></li>
-        <li><SocialIcon :icon="['fa', 'bolt']" /></li>
-        <li><SocialIcon :icon="['fab', 'pinterest']" /></li>
-      </ul>
+      <h1 :class="$style.name">Kode Neko</h1>
     </div>
     <div :class="$style.right">
       <font-awesome-icon
@@ -19,10 +9,6 @@
         :icon="['fas', 'bars']"
         @click="show = !show"
       />
-      <!--
-      
-      <div :class="$style.credits">Kodeneko © 2022</div>
-      -->
     </div>
   </div>
   <Transition name="menu">
@@ -56,6 +42,7 @@ import SocialIcon from "./common/SocialIcon.vue";
 import MainBtn from "./common/MainBtn.vue";
 import logo from "@/assets/head.svg";
 import { MqResponsive } from "vue3-mq";
+import { socialList } from "../globals";
 
 export default {
   name: "MainBar",
@@ -64,6 +51,7 @@ export default {
     return {
       logo,
       show: false,
+      socialList,
     };
   },
 };
@@ -84,7 +72,7 @@ export default {
 .cont {
   background: linear-gradient(90deg, #9164a0 0%, #2e1152 100%);
   width: 100%;
-  padding: 10px 40px;
+  padding: 10px 20px;
   box-sizing: border-box;
   position: fixed;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
@@ -111,12 +99,6 @@ export default {
   font-family: "Saira Condensed", sans-serif;
   font-size: 42px;
   text-shadow: 2px 2px rgb(0 0 0 / 40%);
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
 }
 
 .right .menuBars {
@@ -148,11 +130,11 @@ export default {
 .menu ul {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
 }
 
 .menu ul.res {
-  gap: 10px;
+  gap: 6px;
 }
 
 .menu ul li {

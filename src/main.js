@@ -6,7 +6,8 @@ import {
   faTwitter,
   faGithub,
   faCodepen,
-  faPinterest,
+  faFigma,
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faBolt,
@@ -32,7 +33,8 @@ library.add([
   faBolt,
   faCoffee,
   faLink,
-  faPinterest,
+  faFigma,
+  faFacebook,
   faCircleChevronLeft,
   faCircleChevronRight,
   faBars,

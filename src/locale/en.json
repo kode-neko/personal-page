@@ -4,107 +4,117 @@
     "text": "I'm a fullstack developer. Check out my profile and projects. I like cooking, drawing and being alchemist 💻🍔🎨⚗️"
   },
   "tech": {
-    "title": "Technolgies",
+    "title": "Tecnologías",
     "msg": "Pasa por encima de cada tecnología para ver su descripción.",
-    "react": {
-      "name": "React",
+    "html": {
+      "name": "HTML 5",
       "version": "",
-      "desc": "Esto es una descripción"
+      "desc": "Lenguaje de marcado para la construcción de págians web"
     },
-    "redux": {
-      "name": "Redux",
+    "css": {
+      "name": "CSS 3",
       "version": "",
-      "desc": "Esto es una descripción"
+      "desc": "Permite maquetar y dar estilo a las páginas web"
     },
-    "angular": {
-      "name": "Angular",
+    "ES": {
+      "name": "ECMA Script",
       "version": "",
-      "desc": "Esto es una descripción"
-    },
-    "node": {
-      "name": "Node",
-      "version": "",
-      "desc": "Esto es una descripción"
-    },
-    "express": {
-      "name": "Express",
-      "version": "",
-      "desc": "Esto es una descripción"
-    },
-    "mongo": {
-      "name": "Mongo",
-      "version": "",
-      "desc": "Esto es una descripción"
+      "desc": "El estándar ECMA Script es implementado por lenguajes como JavaScript. Permite crear web dinñamicas y base para todo el universo de frameworks front.end"
     },
     "typescript": {
       "name": "Typescript",
       "version": "",
-      "desc": "Esto es una descripción"
+      "desc": "Es un transpilador de JavaScript. Mejora este incluyendo funciones de lengaujes de POO tipados."
     },
-    "graphql": {
-      "name": "GraphQL",
+    "react": {
+      "name": "ES 13",
       "version": "",
-      "desc": "Esto es una descripción"
+      "desc": "Librería front-end de JavaScript para crear webs SPA. Lo considero el que mejro curva de aprendizaje tiene. También el más fácil para escalar siendo su punto débil, facilidad de crear espagueti code."
+    },
+    "redux": {
+      "name": "Redux",
+      "version": "",
+      "desc": "Gestor de estados para React. Permite tener un almacén central, donde guardamos los datos que sean comunes a todos los componentes"
     },
     "vue": {
       "name": "Vue",
-      "version": "",
-      "desc": "Esto es una descripción"
+      "version": "2-3",
+      "desc": "Librería front para crear webs SPA. Parece un híbrido entre React y Angular. La versión 2 trabajas con la Options APi, mientra la 3 con la Composition API. Me gusta mñas la versión 2, es más intuitiva e inmediata de usar."
     },
     "pineaple": {
       "name": "Pineaple",
-      "version": "",
-      "desc": "Esto es una descripción"
+      "version": "2-3",
+      "desc": "Gestor de estados para Vue. Mucho más intuitivo y fácil de usar que Redux"
     },
-    "docker": {
-      "name": "Docker",
-      "version": "",
-      "desc": "Esto es una descripción"
+    "angular": {
+      "name": "Angular",
+      "version": "2-3",
+      "desc": "Framework para crear SPA en JavaScript. A diferencia de React y Vue, es un framework compelto ahorrandote mucho trabajo. La curva de aprendizaje es alta, pero es genial su escalabilidad en aplicaciones de tamaño mediano-grande. Ideal para principiantes para aprender prender buens prácticas."
     },
-    "github": {
-      "name": "Github",
-      "version": "",
-      "desc": "Esto es una descripción"
+    "node": {
+      "name": "Node",
+      "version": "2-3",
+      "desc": "Lenguaje interpretado que usa JavaScript. Permite construir rápidamente APIs, ideal para apps de tamaño pequeño-mediano"
+    },
+    "express": {
+      "name": "Express",
+      "version": "2-3",
+      "desc": "Librería para Node para crear backs. Puedes crear APIs o devolver págians estáticas."
+    },
+    "mongoose": {
+      "name": "Mongoose",
+      "version": "2-3",
+      "desc": "Librería para construir un ODM de Mongo para Node"
+    },
+    "sequalize": {
+      "name": "Sequalize",
+      "version": "2-3",
+      "desc": "Librería para construir un ORM SQL para Node"
+    },
+    "apollo": {
+      "name": "Apollo",
+      "version": "2-3",
+      "desc": "Librería para front y back que eprmite trabajar con GraphQL, una nueva forma de crear APIs como si se tratase de lenguaje SQL"
     },
     "webpack": {
       "name": "Webpack",
-      "version": "",
-      "desc": "Esto es una descripción"
+      "version": "2-3",
+      "desc": "Herramienta para facilutar la construcción de proyectos front-end"
     },
-    "roller": {
-      "name": "Roller",
-      "version": "",
-      "desc": "Esto es una descripción"
+    "docker": {
+      "name": "Docker",
+      "version": "2-3",
+      "desc": "Permite desplegar aplicaciones creando conteendores"
     },
-    "npmYarn": {
-      "name": "npm-yarn",
-      "version": "",
-      "desc": "Esto es una descripción"
+    "npm": {
+      "name": "Npm",
+      "version": "2-3",
+      "desc": "Gestor de paquetes para Node.js y Javascript"
     },
-    "php": {
-      "name": "PHP",
-      "version": "",
-      "desc": "Esto es una descripción"
+    "yarn": {
+      "name": "Yarn",
+      "version": "2-3",
+      "desc": "Gestor de paquetes para Node.js y Javascript. La última versión tuvo bastantes problemas debido a su falat de retrocompatibilidad."
+    },
+    "mongo": {
+      "name": "Mongo",
+      "version": "2-3",
+      "desc": "El más famoso gestor de BBDD para NoSQL"
     },
     "mariadb": {
-      "name": "MariaDB",
-      "version": "",
-      "desc": "Esto es una descripción"
+      "name": "MariaDb",
+      "version": "2-3",
+      "desc": "Gestor de BBDD de tipo SQL deribado de MySQL. Apareció por desaveniencias con Oracle cuando compró Sun"
     },
-    "laravel": {
-      "name": "Laravel",
-      "version": "",
-      "desc": "Esto es una descripción"
+    "visualcode": {
+      "name": "Visual Studio Code",
+      "version": "2-3",
+      "desc": "IDE considerado standard de facto en el mundo front-end. Permite ampliar funcionalidades mediante plugings"
     },
-    "wordpress": {
-      "name": "Wordpress",
-      "version": "",
-      "desc": "Esto es una descripción"
-    },
-    "visualCode": {
-      "name": "Visual Code",
-      "version": "",
-      "desc": "Esto es una descripción"
+    "git": {
+      "name": "Git",
+      "version": "2-3",
+      "desc": "El control de versiones más famoso"
     }
   },
   "exp": {

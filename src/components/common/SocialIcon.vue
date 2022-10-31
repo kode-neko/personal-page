@@ -11,9 +11,6 @@ export default {
   props: {
     icon: {
       type: Array,
-      default() {
-        return ["fab", "twitter"];
-      },
     },
     color: {
       type: String,
