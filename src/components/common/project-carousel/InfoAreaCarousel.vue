@@ -73,7 +73,7 @@ export default {
 }
 .cont .header .links {
   display: inline-block;
-  gap: 10px;
+  gap: 8px;
   position: relative;
   top: -6px;
 }
@@ -82,13 +82,13 @@ export default {
 }
 .cont .desc {
   font-size: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: var(--white);
 }
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 @media all and (max-width: 992px) {
   .cont {
