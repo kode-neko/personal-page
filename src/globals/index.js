@@ -1,4 +1,6 @@
 import lionmissPic from "@/assets/lionmiss.png";
+import cheetyPic from "@/assets/cheety.png";
+import personalPagePic from "@/assets/personalpage.png";
 
 const socialList = [
   {
@@ -43,6 +45,9 @@ const techList = [
   "vue",
   "pinia",
   "angular",
+  "sass",
+  "stylus",
+  "pug",
   "node",
   "express",
   "mongoose",
@@ -58,26 +63,57 @@ const techList = [
   "git",
 ];
 
-const tagColor = ["green", "purple", "orange", "darkPurple", "bluePurple"];
+const tagColor = ["green", "purple", "orange", "purpleDark", "bluePurple"];
 
 const projectLionMiss = {
   id: "lionmiss",
   linkList: [
-    { id: "github", icon: ["fab", "github"], link: "", alt: "" },
+    {
+      id: "github",
+      icon: ["fab", "github"],
+      link: "https://github.com/kode-neko/lionmiss-components",
+      alt: "",
+    },
     { id: "link", icon: ["fa", "link"], link: "", alt: "" },
   ],
   pic: lionmissPic,
-  tagList: ["react", "redux", "node", "mongo"],
+  tagList: ["react", "redux", "node", "express", "apollo"],
   color: "purple",
 };
 const projectCheety = {
   id: "cheety",
-  github: "",
-  link: "",
-  pic: lionmissPic,
-  tagList: ["vue", "pineaple", "node", "mongo"],
+  linkList: [
+    {
+      id: "github",
+      icon: ["fab", "github"],
+      link: "https://github.com/kode-neko/cheety",
+      alt: "",
+    },
+    {
+      id: "link",
+      icon: ["fa", "link"],
+      link: "",
+      alt: "",
+    },
+  ],
+  pic: cheetyPic,
+  tagList: ["vue", "pinia", "node", "express", "mongoose", "stylus", "pug"],
   color: "green",
 };
-const projecList = [projectLionMiss, projectCheety];
+const projectPersonalPage = {
+  id: "personalPage",
+  linkList: [
+    {
+      id: "github",
+      icon: ["fab", "github"],
+      link: "https://github.com/kode-neko/personal-page",
+      alt: "",
+    },
+  ],
+  pic: personalPagePic,
+  tagList: ["vue"],
+  color: "purpleDark",
+};
+const projecList = [projectLionMiss, projectCheety, projectPersonalPage];
 
 export { socialList, techList, tagColor, projecList };

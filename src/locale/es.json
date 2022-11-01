@@ -5,7 +5,7 @@
   },
   "tech": {
     "title": "Tecnologías",
-    "msg": "Pasa por encima de cada tecnología para ver su descripción.",
+    "msg": "Pasa por encima de cada tecnología para ver su descripción",
     "html": {
       "name": "HTML 5",
       "version": "",
@@ -24,12 +24,12 @@
     "typescript": {
       "name": "Typescript",
       "version": "4.8",
-      "desc": "Es un transpilador de JavaScript. Mejora este incluyendo funciones de lengaujes de POO tipados."
+      "desc": "Es un transpilador de JavaScript. Mejora este incluyendo funciones de lengaujes de POO tipados"
     },
     "react": {
       "name": "React",
       "version": "18",
-      "desc": "Librería front-end de JavaScript para crear webs SPA. Lo considero el que mejro curva de aprendizaje tiene. También el más fácil para escalar siendo su punto débil, facilidad de crear espagueti code."
+      "desc": "Librería front-end de JavaScript para crear webs SPA. Lo considero el que mejro curva de aprendizaje tiene. También el más fácil para escalar siendo su punto débil, facilidad de crear espagueti code"
     },
     "redux": {
       "name": "Redux",
@@ -39,7 +39,7 @@
     "vue": {
       "name": "Vue",
       "version": "3",
-      "desc": "Librería front para crear webs SPA. Parece un híbrido entre React y Angular. La versión 2 trabajas con la Options APi, mientra la 3 con la Composition API. Me gusta mñas la versión 2, es más intuitiva e inmediata de usar."
+      "desc": "Librería front para crear webs SPA. Parece un híbrido entre React y Angular. La versión 2 trabajas con la Options APi, mientra la 3 con la Composition API. Me gusta mñas la versión 2, es más intuitiva e inmediata de usar"
     },
     "pinia": {
       "name": "Pinia",
@@ -49,7 +49,22 @@
     "angular": {
       "name": "Angular",
       "version": "10",
-      "desc": "Framework para crear SPA en JavaScript. A diferencia de React y Vue, es un framework compelto ahorrandote mucho trabajo. La curva de aprendizaje es alta, pero es genial su escalabilidad en aplicaciones de tamaño mediano-grande. Ideal para principiantes para aprender prender buens prácticas."
+      "desc": "Framework para crear SPA en JavaScript. A diferencia de React y Vue, es un framework compelto ahorrandote mucho trabajo. La curva de aprendizaje es alta, pero es genial su escalabilidad en aplicaciones de tamaño mediano-grande. Ideal para principiantes para aprender prender buens prácticas"
+    },
+    "sass": {
+      "name": "Sass",
+      "version": "3.6",
+      "desc": "Preprocesador para CSS. Extiende sus funcionalidades permitiendo trabajar de forma mñas cómoda"
+    },
+    "stylus": {
+      "name": "Stylus",
+      "version": "",
+      "desc": "Al igual que Sass es otro preprocesador. Simplifica la sintaxis y usa la sangría en vez de las llaves"
+    },
+    "pug": {
+      "name": "Pug",
+      "version": "",
+      "desc": "Lenguaje de templating para HTML. A diferencia de otros como handlebars, tiene la sintaxis simplificada y usa sangría"
     },
     "node": {
       "name": "Node",
@@ -59,7 +74,7 @@
     "express": {
       "name": "Express",
       "version": "4",
-      "desc": "Librería para Node para crear backs. Puedes crear APIs o devolver págians estáticas."
+      "desc": "Librería para Node para crear backs. Puedes crear APIs o devolver págians estáticas"
     },
     "mongoose": {
       "name": "Mongoose",
@@ -94,7 +109,7 @@
     "yarn": {
       "name": "Yarn",
       "version": "1.22",
-      "desc": "Gestor de paquetes para Node.js y Javascript. La última versión tuvo bastantes problemas debido a su falat de retrocompatibilidad."
+      "desc": "Gestor de paquetes para Node.js y Javascript. La última versión tuvo bastantes problemas debido a su falat de retrocompatibilidad"
     },
     "mongo": {
       "name": "Mongo",
@@ -119,7 +134,7 @@
   },
   "exp": {
     "title": "Experiencia",
-    "text": "Llevo casi 7 años dedicandome al desarrollo. Desde que era joven me gustaba hacer webs en la época del HTML4. Cuando crecí quise ser artista y vi que no era mi camino. Decidí estudiar ingeniería informñatica y al termianr comence haciendo aplicaciones móbiles con Android. Al poco comence con el desarrollo web y me especialicé en el desarrollo front. Trabajé principalmente en consultorias en proyectos para medianas y grandes compañías como Odigeo, Inditex o la WIPO/EUIPO."
+    "text": "Llevo casi 7 años dedicandome al desarrollo. Desde que era joven me gustaba hacer webs en la época del HTML4. Cuando crecí quise ser artista y vi que no era mi camino. Decidí estudiar ingeniería informñatica y al termianr comence haciendo aplicaciones móbiles con Android. Al poco comence con el desarrollo web y me especialicé en el desarrollo front. Trabajé principalmente en consultorias en proyectos para medianas y grandes compañías como Odigeo, Inditex o la WIPO/EUIPO"
   },
   "projects": {
     "lionmiss": {
@@ -128,11 +143,11 @@
     },
     "cheety": {
       "title": "Cheety",
-      "desc": ""
+      "desc": "Recopila apuntes y conocimientos relacioandos con el desarrollo"
     },
     "personalPage": {
-      "title": "Mi web personal",
-      "desc": ""
+      "title": "Web Personal",
+      "desc": "Es esta misma web. Encontrarás información sobre mi trabajo profesional :D"
     },
     "personalBlog": {
       "title": "Mi blog personal",

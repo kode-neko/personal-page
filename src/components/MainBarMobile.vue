@@ -38,7 +38,6 @@
 </template>
 
 <script>
-import SocialIcon from "./common/SocialIcon.vue";
 import MainBtn from "./common/MainBtn.vue";
 import logo from "@/assets/head.svg";
 import { MqResponsive } from "vue3-mq";
@@ -46,7 +45,7 @@ import { socialList } from "../globals";
 
 export default {
   name: "MainBar",
-  components: { SocialIcon, MainBtn, MqResponsive },
+  components: { MainBtn, MqResponsive },
   data() {
     return {
       logo,

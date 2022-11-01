@@ -73,6 +73,7 @@ export default {
 <style module>
 .cont {
   display: flex;
+  gap: 20px;
   align-items: flex-start;
 }
 .tags {
