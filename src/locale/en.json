@@ -1,178 +1,156 @@
 {
   "welcome": {
-    "title": "¡Bienvenido!",
-    "text": "Soy full-stack web developer. Hecha un vistazo a mi perfil y ejemplos. También suelo cocinar, hacer dibujos y jugar a ser alquimista 💻🍔🎨⚗️"
+    "title": "Welcome!",
+    "text": "I'm a full-stack web developer (MERN stack). Take a look my profile and app examples. I also like cooking, drawing and playing with alchemy 💻🍔🎨⚗️"
   },
   "tech": {
-    "title": "Tecnologías",
-    "msg": "Pasa por encima de cada tecnología para ver su descripción",
-    "html": {
-      "name": "HTML 5",
-      "version": "",
-      "desc": "Lenguaje de marcado para la construcción de págians web"
-    },
-    "css": {
-      "name": "CSS 3",
-      "version": "",
-      "desc": "Permite maquetar y dar estilo a las páginas web"
-    },
-    "ES": {
-      "name": "ECMA Script",
-      "version": "13 (2022)",
-      "desc": "El estándar ECMA Script es implementado por lenguajes como JavaScript. Permite crear web dinñamicas y base para todo el universo de frameworks front.end"
-    },
-    "typescript": {
-      "name": "Typescript",
-      "version": "4.8",
-      "desc": "Es un transpilador de JavaScript. Mejora este incluyendo funciones de lengaujes de POO tipados"
-    },
+    "title": "Technologies",
+    "msg": "Hover over each technology to watch its description.",
     "react": {
       "name": "React",
-      "version": "18",
-      "desc": "Librería front-end de JavaScript para crear webs SPA. Lo considero el que mejro curva de aprendizaje tiene. También el más fácil para escalar siendo su punto débil, facilidad de crear espagueti code"
+      "version": "18.2",
+      "desc": "Front-end library to create components."
     },
     "redux": {
       "name": "Redux",
-      "version": "4",
-      "desc": "Gestor de estados para React. Permite tener un almacén central, donde guardamos los datos que sean comunes a todos los componentes"
+      "version": "4.2",
+      "desc": "Central state management for React."
+    },
+    "angular": {
+      "name": "Angular",
+      "version": "14",
+      "desc": "Traditional front-end framework to create components."
     },
     "vue": {
-      "name": "Vue",
-      "version": "3",
-      "desc": "Librería front para crear webs SPA. Parece un híbrido entre React y Angular. La versión 2 trabajas con la Options APi, mientra la 3 con la Composition API. Me gusta mñas la versión 2, es más intuitiva e inmediata de usar"
+      "name": "Vue.js",
+      "version": "18.2",
+      "desc": "Front-end library to create components."
     },
     "pinia": {
       "name": "Pinia",
       "version": "2",
-      "desc": "Gestor de estados para Vue. Mucho más intuitivo y fácil de usar que Redux"
+      "desc": "Central state management for Vue.js"
     },
-    "angular": {
-      "name": "Angular",
-      "version": "10",
-      "desc": "Framework para crear SPA en JavaScript. A diferencia de React y Vue, es un framework compelto ahorrandote mucho trabajo. La curva de aprendizaje es alta, pero es genial su escalabilidad en aplicaciones de tamaño mediano-grande. Ideal para principiantes para aprender prender buens prácticas"
+    "html": {
+      "name": "HTML",
+      "version": "5",
+      "desc": "Markup language to create web pages"
     },
-    "sass": {
-      "name": "Sass",
-      "version": "3.6",
-      "desc": "Preprocesador para CSS. Extiende sus funcionalidades permitiendo trabajar de forma mñas cómoda"
+    "css": {
+      "name": "CSS",
+      "version": "3-next",
+      "desc": "Style Sheet language to create the presentation of a document written in a markup language such as HTML."
     },
-    "stylus": {
-      "name": "Stylus",
-      "version": "",
-      "desc": "Al igual que Sass es otro preprocesador. Simplifica la sintaxis y usa la sangría en vez de las llaves"
-    },
-    "pug": {
-      "name": "Pug",
-      "version": "",
-      "desc": "Lenguaje de templating para HTML. A diferencia de otros como handlebars, tiene la sintaxis simplificada y usa sangría"
+    "es13": {
+      "name": "ECMAScript",
+      "version": "2022 - 13",
+      "desc": "Standard for implementing Javascript."
     },
     "node": {
       "name": "Node",
       "version": "18",
-      "desc": "Lenguaje interpretado que usa JavaScript. Permite construir rápidamente APIs, ideal para apps de tamaño pequeño-mediano"
+      "desc": "JavaScript interpreter for back-end projects."
     },
-    "express": {
-      "name": "Express",
-      "version": "4",
-      "desc": "Librería para Node para crear backs. Puedes crear APIs o devolver págians estáticas"
+    "rest": {
+      "name": "REST",
+      "version": "",
+      "desc": "Standard for writting APIs. Consist on access resources using HTTP protocol."
     },
-    "mongoose": {
-      "name": "Mongoose",
-      "version": "6",
-      "desc": "Librería para construir un ODM de Mongo para Node"
-    },
-    "sequalize": {
-      "name": "Sequalize",
-      "version": "6",
-      "desc": "Librería para construir un ORM SQL para Node"
-    },
-    "apollo": {
-      "name": "Apollo",
-      "version": "3-4",
-      "desc": "Librería para front y back que eprmite trabajar con GraphQL, una nueva forma de crear APIs como si se tratase de lenguaje SQL"
-    },
-    "webpack": {
-      "name": "Webpack",
-      "version": "5",
-      "desc": "Herramienta para facilutar la construcción de proyectos front-end"
-    },
-    "docker": {
-      "name": "Docker",
-      "version": "20",
-      "desc": "Permite desplegar aplicaciones creando conteendores"
-    },
-    "npm": {
-      "name": "Npm",
-      "version": "8.15",
-      "desc": "Gestor de paquetes para Node.js y Javascript"
-    },
-    "yarn": {
-      "name": "Yarn",
-      "version": "1.22",
-      "desc": "Gestor de paquetes para Node.js y Javascript. La última versión tuvo bastantes problemas debido a su falat de retrocompatibilidad"
+    "graphql": {
+      "name": "GraphQL",
+      "version": "",
+      "desc": "Standard for writting APIs. Consist on querying a data model using a language. We only use one endpoint instead of several ones as an API REST."
     },
     "mongo": {
-      "name": "Mongo",
-      "version": "6",
-      "desc": "El más famoso gestor de BBDD para NoSQL"
-    },
-    "mariadb": {
-      "name": "MariaDb",
-      "version": "10",
-      "desc": "Gestor de BBDD de tipo SQL deribado de MySQL. Apareció por desaveniencias con Oracle cuando compró Sun"
-    },
-    "visualcode": {
-      "name": "Visual Studio Code",
-      "version": "1.72",
-      "desc": "IDE considerado standard de facto en el mundo front-end. Permite ampliar funcionalidades mediante plugings"
+      "name": "MongoDB",
+      "version": "",
+      "desc": "No relational DB management system."
     },
     "git": {
       "name": "Git",
-      "version": "2.37",
-      "desc": "El control de versiones más famoso"
+      "version": "",
+      "desc": "Version control."
+    },
+    "docker": {
+      "name": "Docker",
+      "version": "",
+      "desc": "Container system to deploy apps."
+    },
+    "nginx": {
+      "name": "NGinx",
+      "version": "",
+      "desc": "Web server."
+    },
+    "figma": {
+      "name": "Figma",
+      "version": "",
+      "desc": "Design App to create UI or other grpahics."
+    },
+    "storybook": {
+      "name": "Storybook",
+      "version": "",
+      "desc": "App to create a component catalogue."
+    },
+    "apollo": {
+      "name": "Apollo",
+      "version": "",
+      "desc": "Library for building GraphQL in back-end."
+    },
+    "mongoose": {
+      "name": "Mongoose",
+      "version": "",
+      "desc": "Mongo ODM."
+    },
+    "stylus": {
+      "name": "Stylus",
+      "version": "",
+      "desc": "CSS pre processor."
+    },
+    "pug": {
+      "name": "Pug",
+      "version": "",
+      "desc": "HTML templating system."
+    },
+    "express": {
+      "name": "Express",
+      "version": "",
+      "desc": "Node library for building an API REST."
     }
   },
   "exp": {
-    "title": "Experiencia",
-    "text": "Llevo 8 años dedicándome profesionalmente al desarrollo. Desde que era joven me gustaba hacer webs en la época del HTML4. Cuando crecí quise ser artista y vi que no era mi camino. Decidí estudiar ingeniería informática y al termimar me puse ha ahcer aplicaciones móbiles con Android. Al poco tiempo retomé el desarrollo web y me especialicé en el font-end. Trabajé principalmente en consultorias en proyectos para medianas y grandes compañías como Odigeo, Inditex o la WIPO/EUIPO"
+    "title": "Experience",
+    "text": "I have been working on web development for more than 8 years. When I was younger I used to like creating webs in the HTML4 ages. I decided study computing engeneering and I made web developing freelancer jobs. When I finished, I started a small stage as a mobile developer. Finally, I decided to head in web development again and I have specialized in the front-end until now. Mainly I have been working in consulting inside medium and large company projects such us Odigeo, Inditext or the EUIPO/WIPO."
   },
   "projects": {
     "lionmiss": {
       "title": "Lion Miss",
-      "desc": "Tienda online de ejemplo con múltiples funciones: carrito, galeria, comentarios, envio, usuarios..."
+      "desc": "Example online shop. At the moment It is formed with projects shown in Github, Swagger, visor GraphQL and Storybook."
     },
     "cheety": {
       "title": "Cheety",
-      "desc": "Recopila apuntes y conocimientos relacioandos con el desarrollo"
+      "desc": "Gather notes and knowledge related to develope."
     },
     "personalPage": {
       "title": "Web Personal",
-      "desc": "Es esta misma web. Encontrarás información sobre mi trabajo profesional :D"
+      "desc": "It's the same website. You can find my professional work."
     },
-    "personalBlog": {
-      "title": "Mi blog personal",
-      "desc": ""
-    },
-    "codepen": {
-      "title": "Codepen",
-      "desc": ""
-    },
-    "stackblitz": {
-      "title": "Stackblitz",
-      "desc": ""
+    "animalRescue": {
+      "title": "Animal Rescue",
+      "desc": "Example of several project created using differents front-end frameworks and libraries."
     }
   },
   "contact": {
-    "name": "nombre",
-    "mail": "ejemplo@email.com",
-    "msg": "Escribe aquí el mesnaje...",
-    "send": "Enviar",
-    "ok": "¡Mensaje enviado! Recibirás pronto en tu correo la confirmación :)",
-    "ko": "¡Vaya! Parece que hubo un problema. Inténtelo más tarde :(",
-    "required": "El campo está vacio",
-    "requiredMsg": "El cuerpo del mensaje está vacio",
-    "formatMail": "Un email tiene el formato xxx@xxx.xxx",
-    "minMsg": "El mensaje a de tener más de 50 caracteres",
-    "maxMsg": "El mensaje no puede exceder los 600 caracteres"
+    "title": "Contact",
+    "name": "name",
+    "mail": "example@email.com",
+    "msg": "Write a message here...",
+    "send": "Send",
+    "ok": "The message was sended! You'll recieve a confirmation email soon",
+    "ko": "Oh! There was some problem. Try again later ;)",
+    "required": "The field is empty",
+    "requiredMsg": "The body message is empty",
+    "formatMail": "The email format is xxx@xxx.xxx",
+    "minMsg": "The message must be minimum 50 characters",
+    "maxMsg": "The message cannot be more than 600 characters"
   }
 }

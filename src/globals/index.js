@@ -9,19 +9,9 @@ const socialList = [
     url: "https://twitter.com/KodenekoFront",
   },
   {
-    name: "facebook",
-    icon: ["fab", "facebook"],
-    url: "https://www.facebook.com/profile.php?id=100079192857532",
-  },
-  {
     name: "github",
     icon: ["fab", "github"],
     url: "https://github.com/kode-neko",
-  },
-  {
-    name: "codepen",
-    icon: ["fab", "codepen"],
-    url: "https://codepen.io/kodeneko",
   },
   {
     name: "stackblitz",
@@ -29,38 +19,30 @@ const socialList = [
     url: "https://stackblitz.com/@kode-neko",
   },
   {
-    name: "figma",
-    icon: ["fab", "figma"],
-    url: "https://www.figma.com/file/4a3GUeevphKRrutthOtAdU/Dark",
+    name: "codepen",
+    icon: ["fab", "codepen"],
+    url: "https://codepen.io/kodeneko",
   },
 ];
 
 const techList = [
-  "html",
-  "css",
-  "ES",
-  "typescript",
   "react",
   "redux",
+  "angular",
   "vue",
   "pinia",
-  "angular",
-  "sass",
-  "stylus",
-  "pug",
+  "html",
+  "css",
+  "es13",
   "node",
-  "express",
-  "mongoose",
-  "sequalize",
-  "apollo",
-  "webpack",
-  "docker",
-  "npm",
-  "yarn",
+  "rest",
+  "graphql",
   "mongo",
-  "mariadb",
-  "visualcode",
   "git",
+  "docker",
+  "nginx",
+  "figma",
+  "storybook",
 ];
 
 const tagColor = ["green", "purple", "orange", "purpleDark", "bluePurple"];
@@ -71,15 +53,42 @@ const projectLionMiss = {
     {
       id: "github",
       icon: ["fab", "github"],
-      link: "https://github.com/kode-neko/lionmiss-components",
+      link: "https://github.com/kode-neko/lionmiss-hub",
       alt: "",
     },
-    { id: "link", icon: ["fa", "link"], link: "", alt: "" },
+    {
+      id: "link",
+      icon: ["fa", "link"],
+      link: "http://www.kodeneko.com/lionmiss",
+      alt: "",
+    },
   ],
   pic: lionmissPic,
-  tagList: ["react", "redux", "node", "express", "apollo"],
+  tagList: ["react", "redux", "node", "express", "mongo", "graphql", "apollo"],
   color: "purple",
 };
+
+const projectAnimalRescue = {
+  id: "animalRescue",
+  linkList: [
+    {
+      id: "github",
+      icon: ["fab", "github"],
+      link: "https://github.com/kode-neko/animal-rescue-main",
+      alt: "",
+    },
+    {
+      id: "link",
+      icon: ["fa", "link"],
+      link: "http://www.kodeneko.com/animal-rescue",
+      alt: "",
+    },
+  ],
+  pic: cheetyPic,
+  tagList: ["react", "vue", "angular"],
+  color: "orange",
+};
+
 const projectCheety = {
   id: "cheety",
   linkList: [
@@ -92,7 +101,7 @@ const projectCheety = {
     {
       id: "link",
       icon: ["fa", "link"],
-      link: "",
+      link: "http://www.kodeneko.com/cheety",
       alt: "",
     },
   ],
@@ -100,6 +109,7 @@ const projectCheety = {
   tagList: ["vue", "pinia", "node", "express", "mongoose", "stylus", "pug"],
   color: "green",
 };
+
 const projectPersonalPage = {
   id: "personalPage",
   linkList: [
@@ -114,6 +124,12 @@ const projectPersonalPage = {
   tagList: ["vue"],
   color: "purpleDark",
 };
-const projecList = [projectLionMiss, projectCheety, projectPersonalPage];
+
+const projecList = [
+  projectLionMiss,
+  projectAnimalRescue,
+  projectCheety,
+  projectPersonalPage,
+];
 
 export { socialList, techList, tagColor, projecList };
