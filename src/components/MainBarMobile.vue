@@ -15,22 +15,22 @@
     <nav v-if="show" :class="[$style.menu]">
       <MqResponsive target="md+">
         <ul>
-          <li><MainBtn type="main">Artículos</MainBtn></li>
+          <!-- <li><MainBtn type="main">Artículos</MainBtn></li> -->
           <li>
             <MainBtn type="normal" link="#contact">Contacto</MainBtn>
           </li>
-          <li><MainBtn type="normal">Curriculum</MainBtn></li>
+          <!-- <li><MainBtn type="normal">Curriculum</MainBtn></li> -->
         </ul>
       </MqResponsive>
       <MqResponsive target="sm-">
         <ul :class="$style.res">
-          <li><MainBtn type="main" size="small">Artículos</MainBtn></li>
+          <!-- <li><MainBtn type="main" size="small">Artículos</MainBtn></li> -->
           <li>
-            <MainBtn type="normal" size="small" link="#contact"
-              >Contacto</MainBtn
-            >
+            <MainBtn type="normal" size="small" link="#contact">{{
+              $t("contact.title")
+            }}</MainBtn>
           </li>
-          <li><MainBtn type="normal" size="small">Curriculum</MainBtn></li>
+          <!-- <li><MainBtn type="normal" size="small">Curriculum</MainBtn></li> -->
         </ul>
       </MqResponsive>
     </nav>

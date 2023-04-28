@@ -1,7 +1,7 @@
 :root {
-  --black: rgba(18,12,20,1.0);
-  --black-second: rgba(36,24,40,1.0);
-  --black-box: rgba(86,8,85,0.20);
+  --black: rgba(18, 12, 20, 1);
+  --black-second: rgba(36, 24, 40, 1);
+  --black-box: rgba(86, 8, 85, 0.2);
   --white: rgb(249, 241, 255);
   --purple-dark: rgb(86, 8, 85);
   --purple-mid: rgb(163, 38, 143);
@@ -24,9 +24,9 @@
   --tag-vio-blue-dark-02: #26094b;
   --tag-orange-dark-02: #3b2100;
 
-  --purple-mid-trans: rgba(163,38,142,0.4);
-  --tag-green-trans: rgba(20,98,132,0.4);
-  --tag-purple-dark-trans: rgba(107,12,93,0.4);
-  --tag-vio-blue-trans: rgba(120,61,197,0.4);
-  --tag-orange-trans: rgba(188,103,0,0.4);
+  --purple-mid-trans: rgba(163, 38, 142, 0.4);
+  --tag-green-trans: rgba(20, 98, 132, 0.4);
+  --tag-purple-dark-trans: rgba(107, 12, 93, 0.4);
+  --tag-vio-blue-trans: rgba(120, 61, 197, 0.4);
+  --tag-orange-trans: rgba(188, 103, 0, 0.4);
 }

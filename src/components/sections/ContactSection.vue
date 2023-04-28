@@ -95,12 +95,7 @@ export default {
     sendMsg() {
       this.sending = true;
       axios
-        .post(
-          `${import.meta.env.VITE_CONTACT_SERVER}:${
-            import.meta.env.VITE_CONTACT_PORT
-          }/contact`,
-          this.msg
-        )
+        .post(import.meta.env.VITE_CONTACT, this.msg)
         .then(() =>
           this.$notify({
             text: "📭 El mensaje ha sido enviado con éxito",

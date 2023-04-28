@@ -2,7 +2,7 @@
   <div :class="$style.footer">
     <LocaleSelector size="small" />
     <div>-</div>
-    <div>Kodeneko © 2022</div>
+    <div>Kodeneko © 2023</div>
   </div>
 </template>
 

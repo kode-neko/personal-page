@@ -2,16 +2,16 @@
   <div :class="$style.cont">
     <div :class="$style.header"><WelcomeMsg /></div>
     <div :class="$style.part">
-      <BoxContent title="Tecnologías"><TechSection /></BoxContent>
+      <BoxContent :title="$t('tech.title')"><TechSection /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent title="Experiencia"><ExperienceSection /></BoxContent>
+      <BoxContent :title="$t('exp.title')"><ExperienceSection /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent title="Projectos"><ProjectSection /></BoxContent>
+      <BoxContent :title="$t('project.title')"><ProjectSection /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent title="Contacto"><ContactSection /></BoxContent>
+      <BoxContent :title="$t('contact.title')"><ContactSection /></BoxContent>
     </div>
   </div>
 </template>
@@ -70,6 +70,7 @@ export default {
     margin: 0;
     margin-top: 63px;
     padding: 20px;
+    margin-bottom: 112px;
   }
 }
 </style>

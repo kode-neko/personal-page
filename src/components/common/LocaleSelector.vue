@@ -7,11 +7,11 @@
     }"
   >
     <font-awesome-icon :icon="['fa', 'globe']" /><span
-      :class="{ [$style.type]: true, [$style.selected]: locale === 'es' }"
+      :class="{ [$style.type]: true, [$style.selected]: locale === 'en' }"
       @click="changeLocale('es')"
       >ES</span
     ><span
-      :class="{ [$style.type]: true, [$style.selected]: locale === 'en' }"
+      :class="{ [$style.type]: true, [$style.selected]: locale === 'es' }"
       @click="changeLocale('en')"
       >EN</span
     >

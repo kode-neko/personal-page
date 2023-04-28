@@ -88,7 +88,7 @@ export default {
   padding: 0 20px;
   box-sizing: border-box;
   border-left: 1px solid var(--purple-dark);
-  height: 200px;
+  height: 124px;
 }
 
 .description .version {

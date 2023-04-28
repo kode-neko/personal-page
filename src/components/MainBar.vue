@@ -10,14 +10,16 @@
     </ul>
     <nav>
       <div :class="[$style.menu]">
-        <MainBtn type="main">Artículos</MainBtn>
-        <MainBtn type="normal" link="#contact">Contacto</MainBtn>
-        <MainBtn type="normal">Curriculum</MainBtn>
+        <!-- <MainBtn type="main">Artículos</MainBtn> -->
+        <MainBtn type="normal" link="#contact">{{
+          $t("contact.title")
+        }}</MainBtn>
+        <!-- <MainBtn type="normal">Curriculum</MainBtn> -->
       </div>
     </nav>
     <div :class="$style.footer">
       <LocaleSelector />
-      <div :class="$style.credits">Kodeneko © 2022</div>
+      <div :class="$style.credits">Kodeneko © 2023</div>
     </div>
   </div>
 </template>
