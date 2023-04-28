@@ -29,3 +29,5 @@ coverage
 
 personal-page.code-workspace
 personal-page.code-workspace
+
+.env
