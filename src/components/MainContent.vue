@@ -8,7 +8,7 @@
       <BoxContent :title="$t('exp.title')"><ExperienceSection /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent :title="$t('project.title')"><ProjectSection /></BoxContent>
+      <BoxContent :title="$t('projects.title')"><ProjectSection /></BoxContent>
     </div>
     <div :class="$style.part">
       <BoxContent :title="$t('contact.title')"><ContactSection /></BoxContent>
@@ -53,7 +53,7 @@ export default {
       rgba(64, 33, 96, 0.4) 100%
     ),
     url("../assets/starnight.jpg") no-repeat left -375px / 1200px auto,
-    url("../assets/starhouse.jpg") no-repeat left 664px / 1130px auto;
+    url("../assets/starhouse.jpg") no-repeat left 664px / 1130px;
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.4), 6px 0px 4px rgba(0, 0, 0, 0.4);
   margin-left: 274px;
   padding: 40px;

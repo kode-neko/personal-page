@@ -46,6 +46,11 @@
       "version": "2022 - 13",
       "desc": "Estándar que permite implementar JavaScript."
     },
+    "typescript": {
+      "name": "Typescript",
+      "version": "",
+      "desc": "Transpialdor de Javasceipt para mejorar y añadir nuevas funcionalidades."
+    },
     "node": {
       "name": "Node",
       "version": "18",
@@ -65,6 +70,21 @@
       "name": "MongoDB",
       "version": "",
       "desc": "Sistema gestor de BD no relacional."
+    },
+    "jest": {
+      "name": "Jest",
+      "version": "",
+      "desc": "Test runner para test unitarios."
+    },
+    "cypress": {
+      "name": "Cypress",
+      "version": "",
+      "desc": "Framework para E2E testing."
+    },
+    "webpack": {
+      "name": "Webpack",
+      "version": "5",
+      "desc": "Module bundler."
     },
     "git": {
       "name": "Git",
@@ -122,6 +142,7 @@
     "text": "Llevo más de 8 años dedicándome al desarrollo web. Cuando era joven me gustaba crear webs en la época del HTML4. Decidí estudiar ingeniería informática y hacía trabajos web como freelancer. Cuando acabé tuve una breve etapa como desarrolladora Android, pero al final me encaminé en el desarrollo web de nuevo y me especialicé en el font-end hasta ahora. Trabajé principalmente en consultorias dentro de proyectos de medianas y grandes empresas como Odigeo, Inditex o la WIPO/EUIPO."
   },
   "projects": {
+    "title": "Proyectos",
     "lionmiss": {
       "title": "Lion Miss",
       "desc": "Tienda online de ejemplo. De momento se compone de varios proyectos expuestos en Github, Swagger, visor GraphQL y Storybook."

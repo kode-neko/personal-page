@@ -3,12 +3,7 @@
     <div :class="$style.header">
       <h3 :class="$style.title">{{ $t(`projects.${id}.title`) }}</h3>
       <div :class="$style.links">
-        <SocialIcon
-          v-for="link in linkList"
-          :key="link.id"
-          :icon="link.icon"
-          :color="`${color}Dark`"
-        />
+        <SocialIcon v-for="link in linkList" :key="link.id" :icon="link.icon" />
       </div>
     </div>
     <p :class="$style.desc">
@@ -63,6 +58,8 @@ export default {
   left: 50%;
 }
 .cont .header {
+  display: flex;
+  align-items: baseline;
   margin-bottom: 10px;
 }
 .cont .header .title {
@@ -72,17 +69,15 @@ export default {
   margin-right: 20px;
 }
 .cont .header .links {
-  display: inline-block;
+  display: flex;
+  align-items: baseline;
   gap: 8px;
   position: relative;
   top: -6px;
 }
-.cont .header .links > * {
-  margin-right: 10px;
-}
 .cont .desc {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   color: var(--white);
 }
 .tags {
@@ -94,10 +89,17 @@ export default {
   .cont {
     width: 100%;
     border-radius: 0 0 8px 8px;
-    height: 150px;
+    height: auto;
     left: 0;
     position: relative;
     padding-right: 20px;
+  }
+  .cont .header {
+    flex-direction: column;
+  }
+
+  .cont .header .links {
+    margin-top: 12px;
   }
   .cont .header .title {
     font-size: 42px;
@@ -108,7 +110,7 @@ export default {
 }
 @media all and (max-width: 768px) {
   .cont {
-    height: 200px;
+    min-height: auto;
   }
 }
 </style>

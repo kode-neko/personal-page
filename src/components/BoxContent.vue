@@ -21,6 +21,7 @@ export default {
   padding-bottom: 40px;
   background-color: var(--black-box);
   margin: 40px 0;
+  height: auto;
 }
 .box p {
   color: var(--purple-light);

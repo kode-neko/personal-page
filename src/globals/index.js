@@ -23,6 +23,11 @@ const socialList = [
     icon: ["fab", "codepen"],
     url: "https://codepen.io/kodeneko",
   },
+  {
+    name: "figma",
+    icon: ["fab", "figma"],
+    url: "https://www.figma.com/@kodeneko",
+  },
 ];
 
 const techList = [
@@ -34,10 +39,14 @@ const techList = [
   "html",
   "css",
   "es13",
+  "typescript",
   "node",
   "rest",
   "graphql",
   "mongo",
+  "jest",
+  "cypress",
+  "webpack",
   "git",
   "docker",
   "nginx",
@@ -127,9 +136,9 @@ const projectPersonalPage = {
 
 const projecList = [
   projectLionMiss,
-  projectAnimalRescue,
-  projectCheety,
+  // projectAnimalRescue,
   projectPersonalPage,
+  // projectCheety,
 ];
 
 export { socialList, techList, tagColor, projecList };

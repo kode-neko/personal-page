@@ -46,6 +46,11 @@
       "version": "2022 - 13",
       "desc": "Standard for implementing Javascript."
     },
+    "typescript": {
+      "name": "Typescript",
+      "version": "",
+      "desc": "JavaScript transpiler to improve and add functionalities."
+    },
     "node": {
       "name": "Node",
       "version": "18",
@@ -65,6 +70,21 @@
       "name": "MongoDB",
       "version": "",
       "desc": "No relational DB management system."
+    },
+    "jest": {
+      "name": "Jest",
+      "version": "",
+      "desc": "Test runner for unitary testing."
+    },
+    "cypress": {
+      "name": "Cypress",
+      "version": "",
+      "desc": "Framework for E2E testing."
+    },
+    "webpack": {
+      "name": "Webpack",
+      "version": "5",
+      "desc": "Module bundler."
     },
     "git": {
       "name": "Git",
@@ -122,6 +142,7 @@
     "text": "I have been working on web development for more than 8 years. When I was younger I used to like creating webs in the HTML4 ages. I decided study computing engeneering and I made web developing freelancer jobs. When I finished, I started a small stage as a mobile developer. Finally, I decided to head in web development again and I have specialized in the front-end until now. Mainly I have been working in consulting inside medium and large company projects such us Odigeo, Inditext or the EUIPO/WIPO."
   },
   "projects": {
+    "title": "Projects",
     "lionmiss": {
       "title": "Lion Miss",
       "desc": "Example online shop. At the moment It is formed with projects shown in Github, Swagger, visor GraphQL and Storybook."
