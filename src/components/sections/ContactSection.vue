@@ -124,7 +124,7 @@ export default {
           required: helpers.withMessage("contact.required", required),
         },
         content: {
-          minLengthValue: helpers.withMessage("contact.minMsg", minLength(50)),
+          minLengthValue: helpers.withMessage("contact.minMsg", minLength(0)),
           maxLengthValue: helpers.withMessage("contact.maxMsg", maxLength(600)),
           required: helpers.withMessage("contact.requiredMsg", required),
         },
