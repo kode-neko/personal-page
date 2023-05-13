@@ -1,48 +1,31 @@
-# personal-page
+<p align="center">
+  <img width="200" class="logo" src="./src/assets/logo.svg" />
+</p>
 
-This template should help get you started developing with Vue 3 in Vite.
+[💃 Personal Page](https://www.kodeneko.com) | [🐱 Github](https://github.com/kode-neko) | [🐤 Twitter](https://twitter.com/KodenekoFront) | [⚡ StackBlitz](https://stackblitz.com/@kode-neko) | [🧊 Codepen](https://codepen.io/kodeneko) | [🎨 Figma](https://www.figma.com/@kodeneko) | [✉️ Contact Mail](mailto:ladysun.freedom@gmail.com)
 
-## Recommended IDE Setup
+This is my personal web page 💻 I'm not so happy with the result. I think I could be done better but I learnt a lot 📖📚💡 I'm not very experienced with Vue.js and I don't like the its version 3 path. This project it's made by Options API instead of Composition one. 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+The project may change over the time, so you could find changes the next time you check it out 😉
 
-## Customize configuration
+<br />
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+<p align="center">
+  <img class="logo" src="./src/assets/screen.png" />
+</p>
 
-## Project Setup
+<br />
 
-```sh
-npm install
-```
+# 🔗 Links
 
-### Compile and Hot-Reload for Development
+This project connect to a small back-end. That is a very small project which provide basics functions such us mail redirection for contact forms ✉️
 
-```sh
-npm run dev
-```
+- [🛍️ This Personal page](https://www.kodeneko.com/lionmiss)
+- [🌳 Back](https://www.kodeneko.com/lionmiss/swagger)
 
-### Compile and Minify for Production
+# ⚙️ Technologies
+- [🛍️ Vue](https://vuejs.org/api/options-state.html)
+- [🌳 Pinia](https://pinia.vuejs.org/)
 
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+# 🎨 Design
+- [📱 UI | Mockup](https://www.figma.com/community/file/1233909940090440566)
