@@ -1,6 +1,6 @@
 import lionmissPic from "@/assets/lionmiss.png";
 import cheetyPic from "@/assets/cheety.png";
-import personalPagePic from "@/assets/personalpage.png";
+import personalPagePic from "@/assets/screen.png";
 
 const socialList = [
   {
