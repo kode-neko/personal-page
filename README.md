@@ -20,8 +20,8 @@ The project may change over the time, so you could find changes the next time yo
 
 This project connect to a small back-end. That is a very small project which provide basics functions such us mail redirection for contact forms ✉️
 
-- [🛍️ This Personal page](https://www.kodeneko.com/lionmiss)
-- [🌳 Back](https://www.kodeneko.com/lionmiss/swagger)
+- [🖼️ This Personal page](https://www.kodeneko.com/lionmiss)
+- [🏠 Back](https://www.kodeneko.com/lionmiss/swagger)
 
 # ⚙️ Technologies
 - [🛍️ Vue](https://vuejs.org/api/options-state.html)
