@@ -2,13 +2,27 @@
   <div :class="$style.cont">
     <font-awesome-icon :class="$style.icon" :icon="['fas', icon]" />
     <h1 :class="$style.title">{{ title }}</h1>
+    <ul :class="[$style.social]">
+      <li v-for="social in socialList" :key="social.name">
+        <SocialIcon :icon="social.icon" :link="social.url" />
+      </li>
+    </ul>
     <button :class="$style.btn">www.kodeneko.com</button>
   </div>
 </template>
 
 <script>
+import SocialIcon from "./SocialIcon.vue";
+import { socialList } from "../../globals";
+
 export default {
   name: "NotFound",
+  components: { SocialIcon },
+  data() {
+    return {
+      socialList,
+    };
+  },
   props: {
     title: String,
     icon: String,
@@ -35,6 +49,10 @@ export default {
 .title {
   font-family: "Saira Condensed", sans-serif;
   font-size: 5rem;
+}
+.social {
+  display: flex;
+  gap: 1.5rem;
 }
 .btn {
   cursor: pointer;
