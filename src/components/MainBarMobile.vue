@@ -26,6 +26,21 @@
         <ul :class="$style.res">
           <!-- <li><MainBtn type="main" size="small">Artículos</MainBtn></li> -->
           <li>
+            <MainBtn type="normal" size="small" link="#tech">{{
+              $t("tech.title")
+            }}</MainBtn>
+          </li>
+          <li>
+            <MainBtn type="normal" size="small" link="#exp">{{
+              $t("exp.title")
+            }}</MainBtn>
+          </li>
+          <li>
+            <MainBtn type="normal" size="small" link="#projects">{{
+              $t("projects.title")
+            }}</MainBtn>
+          </li>
+          <li>
             <MainBtn type="normal" size="small" link="#contact">{{
               $t("contact.title")
             }}</MainBtn>
@@ -63,7 +78,7 @@ export default {
 }
 .menu-enter-from,
 .menu-leave-to {
-  transform: translateY(-84px);
+  transform: translateY(-313px);
 }
 </style>
 
@@ -128,6 +143,7 @@ export default {
 
 .menu ul {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 10px;
 }
