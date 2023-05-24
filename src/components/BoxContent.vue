@@ -1,5 +1,5 @@
 <template>
-  <section :class="$style.box">
+  <section :id="idSection" :class="$style.box">
     <h2 :class="$style.title">{{ title }}</h2>
     <slot />
   </section>
@@ -10,6 +10,7 @@ export default {
   name: "BoxContent",
   props: {
     title: String,
+    idSection: String,
   },
 };
 </script>

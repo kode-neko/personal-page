@@ -5,6 +5,11 @@
   },
   "tech": {
     "title": "Technologies",
+    "titles": {
+      "front": "Front-End",
+      "back": "Back-End",
+      "other": "More Tools"
+    },
     "msg": "Hover over each technology to watch its description.",
     "react": {
       "name": "React",
@@ -18,7 +23,7 @@
     },
     "angular": {
       "name": "Angular",
-      "version": "14",
+      "version": "15",
       "desc": "Traditional front-end framework to create components."
     },
     "vue": {
@@ -31,6 +36,11 @@
       "version": "2",
       "desc": "Central state management for Vue.js"
     },
+    "reactNative": {
+      "name": "React Native",
+      "version": "",
+      "desc": "Framework for building mobile apps based on React."
+    },
     "html": {
       "name": "HTML",
       "version": "5",
@@ -40,6 +50,21 @@
       "name": "CSS",
       "version": "3-next",
       "desc": "Style Sheet language to create the presentation of a document written in a markup language such as HTML."
+    },
+    "lessSass": {
+      "name": "Less - Sass",
+      "version": "",
+      "desc": "CSS pre processors."
+    },
+    "stylus": {
+      "name": "Stylus",
+      "version": "",
+      "desc": "CSS pre processor. Unlike other tools, the scoping is based on tabulation instead of brackets."
+    },
+    "pug": {
+      "name": "Pug",
+      "version": "",
+      "desc": "HTML templating system. Unlike similar tools, it reduces coding boilerplate."
     },
     "es13": {
       "name": "ECMAScript",
@@ -53,7 +78,7 @@
     },
     "node": {
       "name": "Node",
-      "version": "18",
+      "version": "20",
       "desc": "JavaScript interpreter for back-end projects."
     },
     "rest": {
@@ -61,15 +86,35 @@
       "version": "",
       "desc": "Standard for writting APIs. Consist on access resources using HTTP protocol."
     },
+    "express-koa": {
+      "name": "Express - Koa",
+      "version": "",
+      "desc": "Libraries for implementing back-ends services in Node."
+    },
     "graphql": {
       "name": "GraphQL",
       "version": "",
       "desc": "Standard for writting APIs. Consist on querying a data model using a language. We only use one endpoint instead of several ones as an API REST."
     },
+    "apollo": {
+      "name": "Apollo",
+      "version": "",
+      "desc": "Tool for implementing GraphQL endpoints in Node."
+    },
+    "nexus": {
+      "name": "Nexus",
+      "version": "",
+      "desc": "Tool for implementing easily GraphQL schemas. It usually works with Apollo."
+    },
     "mongo": {
       "name": "MongoDB",
       "version": "",
       "desc": "No relational DB management system."
+    },
+    "mongoose": {
+      "name": "Mongoose",
+      "version": "",
+      "desc": "ODM for MongoDB."
     },
     "jest": {
       "name": "Jest",
@@ -111,30 +156,10 @@
       "version": "",
       "desc": "App to create a component catalogue."
     },
-    "apollo": {
-      "name": "Apollo",
+    "visualStudioCode": {
+      "name": "Visual Studio Code",
       "version": "",
-      "desc": "Library for building GraphQL in back-end."
-    },
-    "mongoose": {
-      "name": "Mongoose",
-      "version": "",
-      "desc": "Mongo ODM."
-    },
-    "stylus": {
-      "name": "Stylus",
-      "version": "",
-      "desc": "CSS pre processor."
-    },
-    "pug": {
-      "name": "Pug",
-      "version": "",
-      "desc": "HTML templating system."
-    },
-    "express": {
-      "name": "Express",
-      "version": "",
-      "desc": "Node library for building an API REST."
+      "desc": "An IDE. In my opinion is the best choice if you are a web dev."
     }
   },
   "exp": {
@@ -158,6 +183,10 @@
     "animalRescue": {
       "title": "Animal Rescue",
       "desc": "Example of several project created using differents front-end frameworks and libraries."
+    },
+    "basketGo": {
+      "title": "Basket Go",
+      "desc": "Prototype of an accesible mobile app. It is an assitant shopping. Allow you make a product list and guide you inside of teh sueprmarket. It was designer for a contest but I haven't enough time to finish."
     }
   },
   "contact": {

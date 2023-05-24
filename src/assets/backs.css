@@ -11,21 +11,24 @@
 .purple {
   background-color: var(--purple-mid);
 }
-.darkPurple {
+.purpleDark {
   background-color: var(--tag-purple-dark);
 }
-.bluePurple {
+.vioBlue {
   background-color: var(--tag-vio-blue);
 }
 .orange {
   background-color: var(--tag-orange);
+}
+.blue {
+  background-color: var(--tag-blue);
 }
 
 /* Dark */
 .greenDark {
   background-color: var(--tag-green-dark);
 }
-.purpleDark {
+.darkPurple {
   background-color: var(--purple-mid-dark);
 }
 .purpleDarkDark {
@@ -37,12 +40,15 @@
 .orangeDark {
   background-color: var(--tag-orange-dark);
 }
+.blueDark {
+  background-color: var(--tag-blue-dark);
+}
 
 /* Dark x2 */
 .greenDark02 {
   background-color: var(--tag-green-dark-02);
 }
-.purpleDark02 {
+.darkPurple02 {
   background-color: var(--purple-mid-dark-02);
 }
 .purpleDarkDark02 {
@@ -53,6 +59,9 @@
 }
 .orangeDark02 {
   background-color: var(--tag-orange-dark-02);
+}
+.blueDark02 {
+  background-color: var(--tag-blue-dark-02);
 }
 
 /* Gradient */
@@ -70,7 +79,7 @@
     var(--purple-mid-dark) 80%
   );
 }
-.purpleDarkGradient {
+.darkPurpleGradient {
   background: linear-gradient(
     135deg,
     var(--tag-purple-dark) 0%,
@@ -91,6 +100,13 @@
     var(--tag-orange-dark) 80%
   );
 }
+.blueGradient {
+  background: linear-gradient(
+    135deg,
+    var(--tag-blue) 0%,
+    var(--tag-blue-dark) 80%
+  );
+}
 
 /* Trans */
 .greenTrans {
@@ -99,7 +115,7 @@
 .purpleTrans {
   background-color: var(--purple-mid-trans);
 }
-.purpleDarkTrans {
+.darkPurpleTrans {
   background-color: var(--tag-purple-dark-trans);
 }
 .vioBlueTrans {
@@ -107,4 +123,7 @@
 }
 .orangeTrans {
   background-color: var(--tag-orange-trans);
+}
+.blueTrans {
+  background-color: var(--tag-blue-trans);
 }

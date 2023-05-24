@@ -1,15 +1,47 @@
 <template>
   <div :class="$style.cont">
-    <div :class="$style.tags" @mouseleave="getInfo()">
-      <TagTech
-        v-for="(tech, index) in techList"
-        v-bind:key="tech"
-        :label="$t(`tech.${tech}.name`)"
-        :cursor="true"
-        :color="tagColor[getColor(index)]"
-        @mouseover="getInfo(tech)"
-      />
+    <div :class="$style.contTag">
+      <div :class="$style.subContTag">
+        <h3 :class="$style.subtitle">{{ $t("tech.titles.front") }}</h3>
+        <div :class="$style.tags" @mouseleave="getInfo()">
+          <TagTech
+            v-for="(tech, index) in techFront"
+            v-bind:key="tech"
+            :label="$t(`tech.${tech}.name`)"
+            :cursor="true"
+            :color="tagColor[getColor(index)]"
+            @mouseover="getInfo(tech)"
+          />
+        </div>
+      </div>
+      <div :class="$style.subContTag">
+        <h3 :class="$style.subtitle">{{ $t("tech.titles.back") }}</h3>
+        <div :class="$style.tags" @mouseleave="getInfo()">
+          <TagTech
+            v-for="(tech, index) in techBack"
+            v-bind:key="tech"
+            :label="$t(`tech.${tech}.name`)"
+            :cursor="true"
+            :color="tagColor[getColor(index)]"
+            @mouseover="getInfo(tech)"
+          />
+        </div>
+      </div>
+      <div :class="$style.subContTag">
+        <h3 :class="$style.subtitle">{{ $t("tech.titles.other") }}</h3>
+        <div :class="$style.tags" @mouseleave="getInfo()">
+          <TagTech
+            v-for="(tech, index) in techOthers"
+            v-bind:key="tech"
+            :label="$t(`tech.${tech}.name`)"
+            :cursor="true"
+            :color="tagColor[getColor(index)]"
+            @mouseover="getInfo(tech)"
+          />
+        </div>
+      </div>
     </div>
+
     <MqResponsive target="lg+" :class="$style.test">
       <div :class="$style.description">
         <Transition name="desc" mode="out-in">
@@ -31,7 +63,7 @@
 </template>
 
 <script>
-import { techList, tagColor } from "../../globals";
+import { techFront, techBack, techOthers, tagColor } from "../../globals";
 import { getColor } from "../../utils";
 import TagTech from "../common/InfoTag.vue";
 import { MqResponsive } from "vue3-mq";
@@ -41,7 +73,9 @@ export default {
   components: { TagTech, MqResponsive },
   data() {
     return {
-      techList,
+      techFront,
+      techBack,
+      techOthers,
       tagColor,
       name: "tech.angular.name",
       description: "tech.angular.desc",
@@ -73,8 +107,20 @@ export default {
 <style module>
 .cont {
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  gap: 2rem;
+}
+.contTag {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 2;
+}
+.subContTag {
+}
+.subtitle {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 .tags {
   display: flex;
@@ -82,13 +128,12 @@ export default {
   flex-wrap: wrap;
 }
 .test {
-  flex-basis: 900px;
+  flex: 1;
 }
 .description {
   padding: 0 20px;
   box-sizing: border-box;
   border-left: 1px solid var(--purple-dark);
-  height: 124px;
 }
 
 .description .version {

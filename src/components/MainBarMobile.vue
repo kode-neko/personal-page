@@ -26,9 +26,40 @@
         <ul :class="$style.res">
           <!-- <li><MainBtn type="main" size="small">Artículos</MainBtn></li> -->
           <li>
-            <MainBtn type="normal" size="small" link="#contact">{{
-              $t("contact.title")
-            }}</MainBtn>
+            <MainBtn
+              type="normal"
+              size="small"
+              link="#tech"
+              @clickBtn="show = !show"
+              >{{ $t("tech.title") }}</MainBtn
+            >
+          </li>
+          <li>
+            <MainBtn
+              type="normal"
+              size="small"
+              link="#exp"
+              @clickBtn="show = !show"
+              >{{ $t("exp.title") }}</MainBtn
+            >
+          </li>
+          <li>
+            <MainBtn
+              type="normal"
+              size="small"
+              link="#projects"
+              @clickBtn="show = !show"
+              >{{ $t("projects.title") }}</MainBtn
+            >
+          </li>
+          <li>
+            <MainBtn
+              type="normal"
+              size="small"
+              link="#contact"
+              @clickBtn="show = !show"
+              >{{ $t("contact.title") }}</MainBtn
+            >
           </li>
           <!-- <li><MainBtn type="normal" size="small">Curriculum</MainBtn></li> -->
         </ul>
@@ -46,6 +77,7 @@ import { socialList } from "../globals";
 export default {
   name: "MainBar",
   components: { MainBtn, MqResponsive },
+  emits: ["clickBtn"],
   data() {
     return {
       logo,
@@ -53,17 +85,18 @@ export default {
       socialList,
     };
   },
+  methods: {},
 };
 </script>
 
 <style>
 .menu-enter-active,
 .menu-leave-active {
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 .menu-enter-from,
 .menu-leave-to {
-  transform: translateY(-84px);
+  transform: translateY(-313px);
 }
 </style>
 
@@ -128,6 +161,7 @@ export default {
 
 .menu ul {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 10px;
 }

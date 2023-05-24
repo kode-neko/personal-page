@@ -2,16 +2,24 @@
   <div :class="$style.cont">
     <div :class="$style.header"><WelcomeMsg /></div>
     <div :class="$style.part">
-      <BoxContent :title="$t('tech.title')"><TechSection /></BoxContent>
+      <BoxContent :title="$t('tech.title')" idSection="tech"
+        ><TechSection
+      /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent :title="$t('exp.title')"><ExperienceSection /></BoxContent>
+      <BoxContent :title="$t('exp.title')" idSection="exp"
+        ><ExperienceSection
+      /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent :title="$t('projects.title')"><ProjectSection /></BoxContent>
+      <BoxContent :title="$t('projects.title')" idSection="projects"
+        ><ProjectSection
+      /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent :title="$t('contact.title')"><ContactSection /></BoxContent>
+      <BoxContent :title="$t('contact.title')" idSection="contact"
+        ><ContactSection
+      /></BoxContent>
     </div>
   </div>
 </template>
@@ -57,8 +65,8 @@ export default {
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.4), 6px 0px 4px rgba(0, 0, 0, 0.4);
   margin-left: 274px;
   padding: 40px;
-  padding-bottom: 300px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .cont .header {
@@ -71,6 +79,15 @@ export default {
     margin-top: 63px;
     padding: 20px;
     margin-bottom: 112px;
+    background: linear-gradient(
+        180deg,
+        rgba(64, 33, 96, 0.4) 0%,
+        var(--black) 20%,
+        var(--black) 80%,
+        rgba(64, 33, 96, 0.4) 100%
+      ),
+      url("../assets/starnight.jpg") no-repeat left -375px / 1200px auto,
+      url("../assets/starhouse.jpg") no-repeat left 1188px / 1130px;
   }
 }
 </style>
