@@ -10,23 +10,27 @@
   --tag-green: #146284;
   --tag-purple-dark: #6b0c5c;
   --tag-vio-blue: #783dc5;
-  --tag-orange: #bc6600;
+  --tag-orange: rgb(188, 102, 0);
+  --tag-blue: rgb(4, 97, 227);
 
   --purple-mid-dark: #610d53;
   --tag-green-dark: #0a3a4e;
   --tag-purple-dark-dark: #410538;
   --tag-vio-blue-dark: #381763;
-  --tag-orange-dark: #643802;
+  --tag-orange-dark: rgb(100, 56, 2);
+  --tag-blue-dark: #082e62;
 
   --purple-mid-dark-02: #4d0641;
   --tag-green-dark-02: #052c3d;
   --tag-purple-dark-dark-02: #380230;
   --tag-vio-blue-dark-02: #26094b;
-  --tag-orange-dark-02: #3b2100;
+  --tag-orange-dark-02: rgb(59, 33, 0);
+  --tag-blue-dark-02: rgb(3, 18, 39);
 
   --purple-mid-trans: rgba(163, 38, 142, 0.4);
   --tag-green-trans: rgba(20, 98, 132, 0.4);
   --tag-purple-dark-trans: rgba(107, 12, 93, 0.4);
   --tag-vio-blue-trans: rgba(120, 61, 197, 0.4);
   --tag-orange-trans: rgba(188, 103, 0, 0.4);
+  --tag-blue-trans: rgba(4, 97, 227, 0.4);
 }

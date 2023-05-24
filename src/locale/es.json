@@ -36,6 +36,11 @@
       "version": "2",
       "desc": "Gestor de estado centralizado para Vue.js."
     },
+    "reactNative": {
+      "name": "React Native",
+      "version": "",
+      "desc": "Framework para construir app móviles basado en React."
+    },
     "html": {
       "name": "HTML",
       "version": "5",
@@ -46,7 +51,7 @@
       "version": "3-next",
       "desc": "Lenguaje de hojas de estilos para crear la presentación de documentos escritos en lenguaje de marcas como HTML."
     },
-    "less - sass": {
+    "lessSass": {
       "name": "Less - Sass",
       "version": "",
       "desc": "Pre procesador para CSS."
@@ -178,6 +183,10 @@
     "animalRescue": {
       "title": "Animal Rescue",
       "desc": "Ejemplo de diversos proyectos creados con diferentes frameworks y librerías front-end."
+    },
+    "basketGo": {
+      "title": "Basket Go",
+      "desc": "Prototipo de una aplicación móvil accesible. Es un asistente de compra. te eprmite hacer una lista de productos y guiarte dentrod el sueprmercado. Fué diseñado para un cocnurso pero no dió tiempo a terminarlo."
     }
   },
   "contact": {

@@ -36,6 +36,11 @@
       "version": "2",
       "desc": "Central state management for Vue.js"
     },
+    "reactNative": {
+      "name": "React Native",
+      "version": "",
+      "desc": "Framework for building mobile apps based on React."
+    },
     "html": {
       "name": "HTML",
       "version": "5",
@@ -46,7 +51,7 @@
       "version": "3-next",
       "desc": "Style Sheet language to create the presentation of a document written in a markup language such as HTML."
     },
-    "less - sass": {
+    "lessSass": {
       "name": "Less - Sass",
       "version": "",
       "desc": "CSS pre processors."
@@ -178,6 +183,10 @@
     "animalRescue": {
       "title": "Animal Rescue",
       "desc": "Example of several project created using differents front-end frameworks and libraries."
+    },
+    "basketGo": {
+      "title": "Basket Go",
+      "desc": "Prototype of an accesible mobile app. It is an assitant shopping. Allow you make a product list and guide you inside of teh sueprmarket. It was designer for a contest but I haven't enough time to finish."
     }
   },
   "contact": {
