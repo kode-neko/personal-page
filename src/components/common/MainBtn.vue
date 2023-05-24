@@ -2,6 +2,7 @@
   <a
     :href="link"
     v-smooth-scroll
+    @click="() => $emit('clickBtn')"
     :class="{
       [$style.main]: type === 'main',
       [$style.normal]: type === 'normal',
@@ -16,6 +17,7 @@
 <script>
 export default {
   name: "MainBtn",
+  emits: ["clickBtn"],
   props: {
     type: {
       type: String,

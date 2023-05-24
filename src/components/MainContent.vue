@@ -2,16 +2,24 @@
   <div :class="$style.cont">
     <div :class="$style.header"><WelcomeMsg /></div>
     <div :class="$style.part">
-      <BoxContent :title="$t('tech.title')"><TechSection /></BoxContent>
+      <BoxContent :title="$t('tech.title')" idSection="tech"
+        ><TechSection
+      /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent :title="$t('exp.title')"><ExperienceSection /></BoxContent>
+      <BoxContent :title="$t('exp.title')" idSection="exp"
+        ><ExperienceSection
+      /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent :title="$t('projects.title')"><ProjectSection /></BoxContent>
+      <BoxContent :title="$t('projects.title')" idSection="projects"
+        ><ProjectSection
+      /></BoxContent>
     </div>
     <div :class="$style.part">
-      <BoxContent :title="$t('contact.title')"><ContactSection /></BoxContent>
+      <BoxContent :title="$t('contact.title')" idSection="contact"
+        ><ContactSection
+      /></BoxContent>
     </div>
   </div>
 </template>

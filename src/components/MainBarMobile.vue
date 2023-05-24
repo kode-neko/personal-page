@@ -26,24 +26,40 @@
         <ul :class="$style.res">
           <!-- <li><MainBtn type="main" size="small">Artículos</MainBtn></li> -->
           <li>
-            <MainBtn type="normal" size="small" link="#tech">{{
-              $t("tech.title")
-            }}</MainBtn>
+            <MainBtn
+              type="normal"
+              size="small"
+              link="#tech"
+              @clickBtn="show = !show"
+              >{{ $t("tech.title") }}</MainBtn
+            >
           </li>
           <li>
-            <MainBtn type="normal" size="small" link="#exp">{{
-              $t("exp.title")
-            }}</MainBtn>
+            <MainBtn
+              type="normal"
+              size="small"
+              link="#exp"
+              @clickBtn="show = !show"
+              >{{ $t("exp.title") }}</MainBtn
+            >
           </li>
           <li>
-            <MainBtn type="normal" size="small" link="#projects">{{
-              $t("projects.title")
-            }}</MainBtn>
+            <MainBtn
+              type="normal"
+              size="small"
+              link="#projects"
+              @clickBtn="show = !show"
+              >{{ $t("projects.title") }}</MainBtn
+            >
           </li>
           <li>
-            <MainBtn type="normal" size="small" link="#contact">{{
-              $t("contact.title")
-            }}</MainBtn>
+            <MainBtn
+              type="normal"
+              size="small"
+              link="#contact"
+              @clickBtn="show = !show"
+              >{{ $t("contact.title") }}</MainBtn
+            >
           </li>
           <!-- <li><MainBtn type="normal" size="small">Curriculum</MainBtn></li> -->
         </ul>
@@ -61,6 +77,7 @@ import { socialList } from "../globals";
 export default {
   name: "MainBar",
   components: { MainBtn, MqResponsive },
+  emits: ["clickBtn"],
   data() {
     return {
       logo,
@@ -68,6 +85,7 @@ export default {
       socialList,
     };
   },
+  methods: {},
 };
 </script>
 

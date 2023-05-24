@@ -1,5 +1,5 @@
 <template>
-  <form id="contact" novalidate @submit.prevent="sendMsg()">
+  <form novalidate @submit.prevent="sendMsg()">
     <div :class="$style.field">
       <input
         v-model="msg.name"
