@@ -92,7 +92,7 @@ export default {
 <style>
 .menu-enter-active,
 .menu-leave-active {
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 .menu-enter-from,
 .menu-leave-to {

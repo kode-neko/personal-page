@@ -1,17 +1,18 @@
 <template>
-  <a
-    :href="link"
-    v-smooth-scroll
-    @click="() => $emit('clickBtn')"
-    :class="{
-      [$style.main]: type === 'main',
-      [$style.normal]: type === 'normal',
-      [$style.medium]: size === 'medium',
-      [$style.small]: size === 'small',
-      [$style.back]: true,
-    }"
-    ><slot></slot
-  ></a>
+  <div @click="() => $emit('clickBtn')">
+    <a
+      :href="link"
+      v-smooth-scroll
+      :class="{
+        [$style.main]: type === 'main',
+        [$style.normal]: type === 'normal',
+        [$style.medium]: size === 'medium',
+        [$style.small]: size === 'small',
+        [$style.back]: true,
+      }"
+      ><slot></slot
+    ></a>
+  </div>
 </template>
 
 <script>
