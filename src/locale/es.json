@@ -5,6 +5,11 @@
   },
   "tech": {
     "title": "Tecnologías",
+    "titles": {
+      "front": "Front-End",
+      "back": "Back-End",
+      "other": "Más Herramientas"
+    },
     "msg": "Pasa por encima de cada tecnología para ver su descripción.",
     "react": {
       "name": "React",
@@ -41,6 +46,21 @@
       "version": "3-next",
       "desc": "Lenguaje de hojas de estilos para crear la presentación de documentos escritos en lenguaje de marcas como HTML."
     },
+    "less - sass": {
+      "name": "Less - Sass",
+      "version": "",
+      "desc": "Pre procesador para CSS."
+    },
+    "stylus": {
+      "name": "Stylus",
+      "version": "",
+      "desc": "Pre procesador para CSS. A diferencia de otros, los ambitos se basan en tabulaciones en vez de llaves."
+    },
+    "pug": {
+      "name": "Pug",
+      "version": "",
+      "desc": "Sistema de templates para HTML. A diferencia de otros, reduce el boilerplate al codificar."
+    },
     "es13": {
       "name": "ECMAScript",
       "version": "2022 - 13",
@@ -61,15 +81,35 @@
       "version": "",
       "desc": "Estándar para escribir APIs. Consiste en acceder a recursos usando el protocolo HTTP."
     },
+    "express-koa": {
+      "name": "Express - Koa",
+      "version": "",
+      "desc": "Libraries for implementing back-ends services in Node."
+    },
     "graphql": {
       "name": "GraphQL",
-      "version": "Estándar para escribir APIs. Consiste en consultas a un modelod e datos usando un lenguaje. Solo tenemos un endpoint en vez de varios como ocurre en una API REST.",
-      "desc": ""
+      "version": "",
+      "desc": "Standard for writting APIs. Consist on querying a data model using a language. We only use one endpoint instead of several ones as an API REST."
+    },
+    "apollo": {
+      "name": "Apollo",
+      "version": "",
+      "desc": "Herramienta para implementar un endpoint de GraphQL en Node."
+    },
+    "nexus": {
+      "name": "Nexus",
+      "version": "",
+      "desc": "Herramienta para escribir facilmente esquemas de GraphQL. Normalmente trabaja junto a Apollo."
     },
     "mongo": {
       "name": "MongoDB",
       "version": "",
-      "desc": "Sistema gestor de BD no relacional."
+      "desc": "No relational DB management system."
+    },
+    "mongoose": {
+      "name": "Mongoose",
+      "version": "",
+      "desc": "ODM para MongoDB."
     },
     "jest": {
       "name": "Jest",
@@ -111,30 +151,10 @@
       "version": "",
       "desc": "Aplicación para crear catálogos de componentes."
     },
-    "apollo": {
-      "name": "Apollo",
+    "visualStudioCode": {
+      "name": "Visual Studio Code",
       "version": "",
-      "desc": "Library for building GraphQL in back-end."
-    },
-    "mongoose": {
-      "name": "Mongoose",
-      "version": "",
-      "desc": "Mongo ODM."
-    },
-    "stylus": {
-      "name": "Stylus",
-      "version": "",
-      "desc": "CSS pre processor."
-    },
-    "pug": {
-      "name": "Pug",
-      "version": "",
-      "desc": "HTML templating system."
-    },
-    "express": {
-      "name": "Express",
-      "version": "",
-      "desc": "Node library for building an API REST."
+      "desc": "Un IDE. En mi opinión es la mejor opción si eres un desarrollador web."
     }
   },
   "exp": {

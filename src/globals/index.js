@@ -54,6 +54,44 @@ const techList = [
   "storybook",
 ];
 
+const techFront = [
+  "react",
+  "redux",
+  "angular",
+  "vue",
+  "pinia",
+  "html",
+  "css",
+  "less - sass",
+  "stylus",
+  "pug",
+  "es13",
+  "typescript",
+];
+
+const techBack = [
+  "node",
+  "rest",
+  "express-koa",
+  "graphql",
+  "apollo",
+  "nexus",
+  "mongo",
+  "mongoose",
+];
+
+const techOthers = [
+  "jest",
+  "cypress",
+  "webpack",
+  "git",
+  "docker",
+  "nginx",
+  "figma",
+  "storybook",
+  "visualStudioCode",
+];
+
 const tagColor = ["green", "purple", "orange", "purpleDark", "bluePurple"];
 
 const projectLionMiss = {
@@ -141,4 +179,12 @@ const projecList = [
   // projectCheety,
 ];
 
-export { socialList, techList, tagColor, projecList };
+export {
+  socialList,
+  techList,
+  techFront,
+  techBack,
+  techOthers,
+  tagColor,
+  projecList,
+};
