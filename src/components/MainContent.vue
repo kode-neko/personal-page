@@ -57,8 +57,8 @@ export default {
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.4), 6px 0px 4px rgba(0, 0, 0, 0.4);
   margin-left: 274px;
   padding: 40px;
-  padding-bottom: 300px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .cont .header {
@@ -71,6 +71,15 @@ export default {
     margin-top: 63px;
     padding: 20px;
     margin-bottom: 112px;
+    background: linear-gradient(
+        180deg,
+        rgba(64, 33, 96, 0.4) 0%,
+        var(--black) 20%,
+        var(--black) 80%,
+        rgba(64, 33, 96, 0.4) 100%
+      ),
+      url("../assets/starnight.jpg") no-repeat left -375px / 1200px auto,
+      url("../assets/starhouse.jpg") no-repeat left 1188px / 1130px;
   }
 }
 </style>
