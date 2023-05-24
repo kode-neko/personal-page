@@ -3,7 +3,12 @@
     <div :class="$style.header">
       <h3 :class="$style.title">{{ $t(`projects.${id}.title`) }}</h3>
       <div :class="$style.links">
-        <SocialIcon v-for="link in linkList" :key="link.id" :icon="link.icon" />
+        <SocialIcon
+          v-for="link in linkList"
+          :key="link.id"
+          :icon="link.icon"
+          :link="link.link"
+        />
       </div>
     </div>
     <p :class="$style.desc">

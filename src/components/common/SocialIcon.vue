@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" :class="$style.cont"
+  <a :href="link" target="_blank" :class="$style.cont"
     ><div :class="[$style.back, $style[color]]">
       <font-awesome-icon :icon="icon" /></div
   ></a>
