@@ -9,6 +9,14 @@
         :color="tagColor[getColor(index)]"
         @mouseover="getInfo(tech)"
       />
+      <TagTech
+        v-for="(tech, index) in techList"
+        v-bind:key="tech"
+        :label="$t(`tech.${tech}.name`)"
+        :cursor="true"
+        :color="tagColor[getColor(index)]"
+        @mouseover="getInfo(tech)"
+      />
     </div>
     <MqResponsive target="lg+" :class="$style.test">
       <div :class="$style.description">

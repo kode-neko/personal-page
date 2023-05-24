@@ -17,13 +17,19 @@ import {
   faCircleChevronRight,
   faBars,
   faGlobe,
+  faFaceGrinBeamSweat,
+  faFaceKiss,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import App from "./App.vue";
+import Home from "./views/Home.vue";
+import NotFound from "./views/NotFound.vue";
+import ServerError from "./views/ServerError.vue";
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 import Notifications from "@kyvg/vue3-notification";
 import VueSmoothScrolls from "vue3-smooth-scroll";
 import { Vue3Mq } from "vue3-mq";
+import { createRouter, createWebHistory } from "vue-router";
 
 // fontawesome
 library.add([
@@ -39,9 +45,23 @@ library.add([
   faCircleChevronRight,
   faBars,
   faGlobe,
+  faFaceGrinBeamSweat,
+  faFaceKiss,
 ]);
 
+const routes = [
+  { path: "/", component: Home },
+  { path: "/not-found", component: NotFound },
+  { path: "/server-error", component: ServerError },
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
+
 const app = createApp(App);
+app.use(router);
 app.use(i18n);
 app.use(createPinia());
 app.use(Notifications);
