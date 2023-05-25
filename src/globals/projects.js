@@ -27,7 +27,15 @@ const projectLionMiss = {
     },
   ],
   pic: lionmissPic,
-  tagList: ["react", "redux", "node", "express", "mongo", "graphql", "apollo"],
+  tagList: [
+    "react",
+    "redux",
+    "node",
+    "express-koa",
+    "mongo",
+    "graphql",
+    "apollo",
+  ],
   color: "purple",
 };
 
@@ -69,7 +77,7 @@ const projectCheety = {
     },
   ],
   pic: cheetyPic,
-  tagList: ["vue", "pinia", "node", "express", "mongoose", "stylus", "pug"],
+  tagList: ["vue", "pinia", "node", "express-koa", "mongoose", "stylus", "pug"],
   color: "green",
 };
 
