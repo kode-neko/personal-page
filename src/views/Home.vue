@@ -46,6 +46,7 @@ export default {
 @import "@/assets/colors.css";
 
 .vue-notification-template.notification {
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
